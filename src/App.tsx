@@ -1,9 +1,10 @@
+import { useState } from "react"
 import data from "./assets/2024/monza/results.json"
 import Monza from "./assets/2024/monza/Italy_Circuit.avif"
 import MonzaTyreGuide from "./assets/2024/monza/monza_tyre_guide.avif"
 import clsx from "clsx"
 import { ArrowDownIcon, ArrowUpIcon, MinusIcon } from "@heroicons/react/24/solid"
-import { useState } from "react"
+import { kmToMi } from "./conversion_utils"
 
 function PositionChange({ starting, final }: { starting: string | number; final: string | number }) {
   const change: number = (starting as number) - (final as number)
@@ -30,14 +31,21 @@ function PositionChange({ starting, final }: { starting: string | number; final:
 
 function App() {
   const [horizontal, setHorizontal] = useState(true)
+  const [useKms, setUseKms] = useState(true)
   return (
     <main className="max-h-screen p-4 flex" style={{ flexDirection: horizontal ? "row" : "column" }}>
       <section className="flex-grow">
         <h2 onClick={() => setHorizontal(!horizontal)} className="text-4xl">
           Race: Monza
         </h2>
+        <div className="form-control">
+          <label className="label justify-normal cursor-pointer">
+            <span className="label-text">{useKms ? "metric" : "imperial"}</span>
+            <input type="checkbox" className="toggle ml-4" checked={useKms} onClick={() => setUseKms(!useKms)} />
+          </label>
+        </div>
         <div className="overflow-x-auto overflow-y-auto">
-          <table className="table table-lg">
+          <table className="table table-md">
             <thead>
               <tr>
                 <th>Pos</th>
@@ -45,7 +53,7 @@ function App() {
                 <th>Team</th>
                 <th>Time/Retired</th>
                 <th>Fastest Lap</th>
-                <th>Avg Speed kph / mph</th>
+                <th>Avg Speed {useKms ? "km/h" : "mi/h"}</th>
               </tr>
             </thead>
             <tbody>
@@ -59,7 +67,7 @@ function App() {
                   <td>{datum.car}</td>
                   <td>{datum.time}</td>
                   <td>{datum.fastestLap}</td>
-                  <td>{datum.avgSpeed}</td>
+                  <td>{useKms ? datum.avgSpeed.toFixed(2) : kmToMi(datum.avgSpeed).toFixed(2)}</td>
                 </tr>
               ))}
             </tbody>
@@ -76,18 +84,16 @@ function App() {
           </article>
           <article className="stat">
             <p className="stat-title">Lap Distance</p>
-            <p className="stat-value">5.793 km / 3.600 mi</p>
+            <p className="stat-value">{useKms ? "5.793 km" : `${kmToMi(5.793).toFixed(3)} mi`}</p>
           </article>
           <article className="stat">
             <p className="stat-title">Race Distance</p>
-            <p className="stat-value">306.72 km / 190.587 mi</p>
+            <p className="stat-value">{useKms ? "306.72 km" : `${kmToMi(306.72).toFixed(3)} mi`}</p>
           </article>
         </div>
 
-        <div>
-          <img src={Monza} alt="monza circuit" />
-          <img src={MonzaTyreGuide} alt="monza tyre guide" />
-        </div>
+        <img src={MonzaTyreGuide} alt="monza tyre guide" />
+        <img src={Monza} alt="monza circuit" />
       </section>
     </main>
   )
