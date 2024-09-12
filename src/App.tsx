@@ -48,7 +48,8 @@ function App() {
           <table className="table table-md">
             <thead>
               <tr>
-                <th>Pos</th>
+                <th>#</th>
+                <th>Starting</th>
                 <th>Driver</th>
                 <th>Team</th>
                 <th>Time/Retired</th>
@@ -63,6 +64,7 @@ function App() {
                     {datum.pos}
                     <PositionChange starting={datum.starting} final={datum.pos} />
                   </td>
+                  <td>{datum.starting}</td>
                   <td>{datum.driver}</td>
                   <td>{datum.car}</td>
                   <td>{datum.time}</td>
