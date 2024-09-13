@@ -5,7 +5,7 @@ import MonzaTyreGuide from "./assets/2024/monza/monza_tyre_guide.avif"
 import { PositionChange } from "./components/PostionChange"
 import clsx from "clsx"
 
-import { kmToMi } from "./conversion_utils"
+import { kmToMi } from "./utils/conversion_utils"
 
 function App() {
   const [horizontal, setHorizontal] = useState(true)

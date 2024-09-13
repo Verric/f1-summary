@@ -8,7 +8,9 @@ import Hass from "../assets/2024/teams/haas-car.avif"
 import Williams from "../assets/2024/teams/williams-car.avif"
 import RB from "../assets/2024/teams/rb-car.avif"
 import Sauber from "../assets/2024/teams/kick-sauber-car.avif"
-export const teamsData = [
+import { sortBy } from "../utils/sortBy"
+
+const teams = [
   {
     position: 1,
     team: "Red Bull Racing Honda RBPT",
@@ -80,3 +82,6 @@ export const teamsData = [
     chassis: "C44",
   },
 ]
+//cache this ?
+const teamsData = sortBy(teams, "points")
+export { teamsData }

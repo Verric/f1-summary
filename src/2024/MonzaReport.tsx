@@ -4,7 +4,7 @@ import Monza from "../assets/2024/monza/Italy_Circuit.avif"
 import MonzaTyreGuide from "../assets/2024/monza/monza_tyre_guide.avif"
 import clsx from "clsx"
 import { PositionChange } from "../components/PostionChange"
-import { kmToMi } from "../conversion_utils"
+import { kmToMi } from "../utils/conversion_utils"
 
 function MonzaReport() {
   const [horizontal, setHorizontal] = useState(true)

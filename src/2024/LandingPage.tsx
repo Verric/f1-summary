@@ -14,7 +14,7 @@ export default function LandingPage() {
           </figure>
         </Link>
       </section>
-      <div className="grid grid-flow-col">
+      <div className="grid grid-cols-2 grid-flow-col">
         <section>
           <ConstructorsLadder />
         </section>
