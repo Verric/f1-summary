@@ -1,13 +1,12 @@
 import { useState } from "react"
-import data from "./assets/2024/monza/results.json"
-import Monza from "./assets/2024/monza/Italy_Circuit.avif"
-import MonzaTyreGuide from "./assets/2024/monza/monza_tyre_guide.avif"
-import { PositionChange } from "./components/PostionChange"
+import data from "../assets/2024/monza/results.json"
+import Monza from "../assets/2024/monza/Italy_Circuit.avif"
+import MonzaTyreGuide from "../assets/2024/monza/monza_tyre_guide.avif"
 import clsx from "clsx"
+import { PositionChange } from "../components/PostionChange"
+import { kmToMi } from "../conversion_utils"
 
-import { kmToMi } from "./conversion_utils"
-
-function App() {
+function MonzaReport() {
   const [horizontal, setHorizontal] = useState(true)
   const [useKms, setUseKms] = useState(true)
   return (
@@ -19,7 +18,12 @@ function App() {
         <div className="form-control">
           <label className="label justify-normal cursor-pointer">
             <span className="label-text">{useKms ? "metric" : "imperial"}</span>
-            <input type="checkbox" className="toggle ml-4" checked={useKms} onClick={() => setUseKms(!useKms)} />
+            <input
+              type="checkbox"
+              className="toggle ml-4"
+              defaultChecked={useKms}
+              onChange={() => setUseKms(!useKms)}
+            />
           </label>
         </div>
         <div className="overflow-x-auto overflow-y-auto">
@@ -79,4 +83,4 @@ function App() {
   )
 }
 
-export default App
+export default MonzaReport
