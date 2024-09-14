@@ -2,8 +2,8 @@ import { StrictMode } from "react"
 import { createRoot } from "react-dom/client"
 import { BrowserRouter, Link, Navigate, Outlet, Route, Routes } from "react-router-dom"
 import MonzaReport from "./2024/MonzaReport.tsx"
-import "./index.css"
 import Dashboard from "./2024/dashboard/Dashboard.tsx"
+import "./index.css"
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>

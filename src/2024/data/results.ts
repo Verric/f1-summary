@@ -116,3 +116,34 @@ export const results = [
     ],
   },
 ]
+
+// Aggregate driver standings up to a specific race
+export function getDriverStandings(upToRace: number) {
+  const driverStandings = new Map<string, { points: number; teamId: string }>()
+
+  results.slice(0, upToRace).forEach(race => {
+    race.drivers.forEach(({ driverId, teamId, points }) => {
+      if (!driverStandings.has(driverId)) {
+        driverStandings.set(driverId, { points: 0, teamId })
+      }
+      driverStandings.get(driverId)!.points += points
+    })
+  })
+
+  return Array.from(driverStandings.entries()).sort((a, b) => b[1].points - a[1].points)
+}
+
+export function getConstructorsStandings(upToRace: number) {
+  const constructorStandings = new Map<string, { points: number }>()
+
+  results.slice(0, upToRace).forEach(race => {
+    race.constructors.forEach(({ teamId, points }) => {
+      if (!constructorStandings.has(teamId)) {
+        constructorStandings.set(teamId, { points: 0 })
+      }
+      constructorStandings.get(teamId)!.points += points
+    })
+  })
+
+  return Array.from(constructorStandings.entries()).sort((a, b) => b[1].points - a[1].points)
+}

@@ -8,7 +8,7 @@ import Hass from "../assets/2024/teams/haas-car.avif"
 import Williams from "../assets/2024/teams/williams-car.avif"
 import RB from "../assets/2024/teams/rb-car.avif"
 import Sauber from "../assets/2024/teams/kick-sauber-car.avif"
-import { sortBy } from "../utils/sortBy"
+import { sortBy } from "../../utils/sortBy"
 
 const teams = [
   {

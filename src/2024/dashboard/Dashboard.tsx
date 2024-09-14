@@ -6,7 +6,11 @@ import AustraliaOutline from "../../assets/2024/australia-outline.png"
 import DriverLeaderboard from "./DriverLeaderboard"
 import ConstructorLeaderboard from "./ConstructorLeaderboard"
 
+import { getDriverStandings, getConstructorsStandings } from "../data/results"
+
 export default function Dashboard() {
+  console.log(getDriverStandings(2))
+  console.log(getConstructorsStandings(2))
   return (
     <main className="flex flex-col p-4">
       <section className="flex-auto">
@@ -36,7 +40,7 @@ export default function Dashboard() {
             </Link>
           </article>
         </section>
-        <input type="range" min={0} max="100" value="40" className="range range-primary" />
+        <input type="range" min={0} max="100" defaultValue="40" className="range range-primary" />
       </section>
       <div className="grid grid-cols-2 grid-flow-col">
         <section>

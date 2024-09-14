@@ -1,4 +1,4 @@
-import { teamsData } from "../teamsData"
+import { teamsData } from "../data/teams"
 
 export default function ConstructorLeaderboard() {
   return (
