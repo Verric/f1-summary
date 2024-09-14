@@ -1,6 +1,7 @@
-import drivers from "../../assets/2024/driverStandings.json"
+import { getDriverStandings } from "../data/results"
 
-export default function DriverLeaderboard() {
+export default function DriverLeaderboard({ race }: { race: number }) {
+  const data = getDriverStandings(race)
   return (
     <table className="table">
       <thead>
@@ -11,7 +12,7 @@ export default function DriverLeaderboard() {
         </tr>
       </thead>
       <tbody>
-        {drivers.map((driver, index) => (
+        {data.map((driver, index) => (
           <tr key={index}>
             <td className="flex">{driver.position}</td>
             <td>{driver.name}</td>

@@ -1,16 +1,11 @@
 import { Link } from "react-router-dom"
-import MonzaOutline from "../../assets/2024/monza/monza_outline.png"
-import BahrainOutline from "../../assets/2024/bahrain-outline.png"
-import SaudiArabiaOutline from "../../assets/2024/saudi-arabia-outline.png"
-import AustraliaOutline from "../../assets/2024/australia-outline.png"
-import DriverLeaderboard from "./DriverLeaderboard"
-import ConstructorLeaderboard from "./ConstructorLeaderboard"
-
-import { getDriverStandings, getConstructorsStandings } from "../data/results"
+import MonzaOutline from "../../assets/2024/circuit_icons/monza-outline.png"
+import BahrainOutline from "../../assets/2024/circuit_icons/bahrain-outline.png"
+import SaudiArabiaOutline from "../../assets/2024/circuit_icons/saudi-arabia-outline.png"
+import AustraliaOutline from "../../assets/2024/circuit_icons/australia-outline.png"
+import LeaderboardLayout from "./LeaderbaordLayout"
 
 export default function Dashboard() {
-  console.log(getDriverStandings(2))
-  console.log(getConstructorsStandings(2))
   return (
     <main className="flex flex-col p-4">
       <section className="flex-auto">
@@ -40,16 +35,8 @@ export default function Dashboard() {
             </Link>
           </article>
         </section>
-        <input type="range" min={0} max="100" defaultValue="40" className="range range-primary" />
       </section>
-      <div className="grid grid-cols-2 grid-flow-col">
-        <section>
-          <ConstructorLeaderboard />
-        </section>
-        <section>
-          <DriverLeaderboard />
-        </section>
-      </div>
+      <LeaderboardLayout />
     </main>
   )
 }

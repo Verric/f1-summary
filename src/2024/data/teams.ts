@@ -1,17 +1,17 @@
-import RedBullCar from "../assets/2024/teams/red-bull-car.avif"
-import Ferrari from "../assets/2024/teams/ferrari-car.avif"
-import Mclaren from "../assets/2024/teams/mclaren-car.avif"
-import Mercedes from "../assets/2024/teams/mercedes-car.avif"
-import AstonMartin from "../assets/2024/teams/aston-martin-car.avif"
-import Alpine from "../assets/2024/teams/alpine-car.avif"
-import Hass from "../assets/2024/teams/haas-car.avif"
-import Williams from "../assets/2024/teams/williams-car.avif"
-import RB from "../assets/2024/teams/rb-car.avif"
-import Sauber from "../assets/2024/teams/kick-sauber-car.avif"
-import { sortBy } from "../../utils/sortBy"
+import RedBullCar from "../../assets/2024/cars/red-bull-car.avif"
+import Ferrari from "../../assets/2024/cars/ferrari-car.avif"
+import Mclaren from "../../assets/2024/cars/mclaren-car.avif"
+import Mercedes from "../../assets/2024/cars/mercedes-car.avif"
+import AstonMartin from "../../assets/2024/cars/aston-martin-car.avif"
+import Alpine from "../../assets/2024/cars/alpine-car.avif"
+import Hass from "../../assets/2024/cars/haas-car.avif"
+import Williams from "../../assets/2024/cars/williams-car.avif"
+import RB from "../../assets/2024/cars/rb-car.avif"
+import Sauber from "../../assets/2024/cars/kick-sauber-car.avif"
 
-const teams = [
+export const teams = [
   {
+    teamId: "red_bull",
     position: 1,
     team: "Red Bull Racing Honda RBPT",
     points: 446,
@@ -19,6 +19,7 @@ const teams = [
     chassis: "RB20",
   },
   {
+    teamId: "mclaren",
     position: 2,
     team: "McLaren Mercedes",
     points: 438,
@@ -26,6 +27,7 @@ const teams = [
     chassis: "MCL38",
   },
   {
+    teamId: "ferrari",
     position: 3,
     team: "Ferrari",
     points: 407,
@@ -33,6 +35,7 @@ const teams = [
     chassis: "SF-24",
   },
   {
+    teamId: "mercedes",
     position: 4,
     team: "Mercedes",
     points: 292,
@@ -40,6 +43,7 @@ const teams = [
     chassis: "W15",
   },
   {
+    teamId: "aston_martin",
     position: 5,
     team: "Aston Martin Aramco Mercedes",
     points: 74,
@@ -47,6 +51,7 @@ const teams = [
     chassis: "AMR24",
   },
   {
+    teamId: "rb",
     position: 6,
     team: "RB Honda RBPT",
     points: 34,
@@ -54,6 +59,7 @@ const teams = [
     chassis: "VCARB 01",
   },
   {
+    teamId: "haas",
     position: 7,
     team: "Haas Ferrari",
     points: 28,
@@ -61,6 +67,7 @@ const teams = [
     chassis: "VF-24",
   },
   {
+    teamId: "alpine",
     position: 8,
     team: "Alpine Renault",
     points: 13,
@@ -68,6 +75,7 @@ const teams = [
     chassis: "A524",
   },
   {
+    teamId: "williams",
     position: 9,
     team: "Williams Mercedes",
     points: 6,
@@ -75,6 +83,7 @@ const teams = [
     chassis: "FW46",
   },
   {
+    teamId: "sauber",
     position: 10,
     team: "Kick Sauber Ferrari",
     points: 0,
@@ -82,6 +91,3 @@ const teams = [
     chassis: "C44",
   },
 ]
-//cache this ?
-const teamsData = sortBy(teams, "points")
-export { teamsData }
