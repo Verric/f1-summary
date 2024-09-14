@@ -7,14 +7,11 @@ import { PositionChange } from "../components/PostionChange"
 import { kmToMi } from "../utils/conversion_utils"
 
 function MonzaReport() {
-  const [horizontal, setHorizontal] = useState(true)
   const [useKms, setUseKms] = useState(true)
   return (
-    <main className="max-h-screen p-4 flex" style={{ flexDirection: horizontal ? "row" : "column" }}>
-      <section className="flex-grow">
-        <h2 onClick={() => setHorizontal(!horizontal)} className="text-4xl">
-          Race: Monza
-        </h2>
+    <main className="max-h-screen p-4 grid grid-cols-2">
+      <section>
+        <h2 className="text-4xl">Race: Monza</h2>
         <div className="form-control">
           <label className="label justify-normal cursor-pointer">
             <span className="label-text">{useKms ? "metric" : "imperial"}</span>
