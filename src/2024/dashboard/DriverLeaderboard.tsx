@@ -13,7 +13,7 @@ export default function DriverLeaderboard({ race }: { race: number }) {
       </thead>
       <tbody>
         {data.map((driver, index) => (
-          <tr key={index}>
+          <tr key={index} className="hover">
             <td className="flex">{driver.position}</td>
             <td>{driver.name}</td>
             <td>{driver.points}</td>
