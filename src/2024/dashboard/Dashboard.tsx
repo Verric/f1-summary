@@ -47,7 +47,7 @@ export default function Dashboard() {
 function LinkCard({ image, name }: { image: string; name: string }) {
   return (
     <article className="p-4 flex flex-col items-center">
-      <img src={image} alt="monza" className="w-32 h-auto" />
+      <img src={image} alt={`${kebabCase(name)} circuit`} className="w-32 h-auto" />
       <Link className="btn btn-primary" to={kebabCase(name)}>
         {name}
       </Link>
