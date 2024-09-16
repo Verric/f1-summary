@@ -2,8 +2,10 @@ import { StrictMode } from "react"
 import { createRoot } from "react-dom/client"
 import { BrowserRouter, Link, Navigate, Outlet, Route, Routes } from "react-router-dom"
 import MonzaReport from "./2024/MonzaReport.tsx"
-import Bahrain from "./2024/BahrainReport.tsx"
 import Dashboard from "./2024/dashboard/Dashboard.tsx"
+import GenericReport from "./2024/GenericReport.tsx"
+
+import { circuits } from "./2024/data/circuits.ts"
 import "./index.css"
 
 createRoot(document.getElementById("root")!).render(
@@ -28,7 +30,8 @@ createRoot(document.getElementById("root")!).render(
         >
           <Route index element={<Dashboard />} />
           <Route path="italy" element={<MonzaReport />} />
-          <Route path="bahrain" element={<Bahrain />} />
+          <Route path="bahrain" element={<GenericReport circuitInfo={circuits.bahrain} />} />
+          <Route path="gen" element={<GenericReport />} />
         </Route>
       </Routes>
     </BrowserRouter>

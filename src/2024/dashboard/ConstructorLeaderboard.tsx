@@ -18,7 +18,7 @@ export default function ConstructorLeaderboard({ race }: { race: number }) {
         <tbody>
           {data.map((team, index) => (
             <tr key={index} className="hover">
-              <td>{team.position}</td>
+              <td>{team.pos}</td>
               <td>
                 {team.team} / {team.chassis}
               </td>
