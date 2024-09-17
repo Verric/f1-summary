@@ -12,6 +12,7 @@ import Monaco from "../../assets/2024/circuit_icons/monaco-outline.png"
 import Canada from "../../assets/2024/circuit_icons/canada-outline.png"
 import Spain from "../../assets/2024/circuit_icons/spain-outline.png"
 import Austria from "../../assets/2024/circuit_icons/austria-outline.png"
+import Belgium from "../../assets/2024/circuit_icons/belgium-outline.png"
 import GreatBritain from "../../assets/2024/circuit_icons/great-britain-outline.png"
 import Hungary from "../../assets/2024/circuit_icons/hungary-outline.png"
 import Netherlands from "../../assets/2024/circuit_icons/netherlands-outline.png"
@@ -35,6 +36,7 @@ export default function Dashboard() {
           <LinkCard image={Austria} name="Austria" />
           <LinkCard image={GreatBritain} name="Great Britain" />
           <LinkCard image={Hungary} name="Hungary" />
+          <LinkCard image={Belgium} name="Belgium" />
           <LinkCard image={Netherlands} name="Netherlands" />
           <LinkCard image={Italy} name="Italy" />
         </section>
