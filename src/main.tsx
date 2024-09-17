@@ -1,8 +1,9 @@
 import { StrictMode } from "react"
 import { createRoot } from "react-dom/client"
-import { BrowserRouter, Navigate, Outlet, Route, Routes } from "react-router-dom"
+import { BrowserRouter, Link, Navigate, Outlet, Route, Routes } from "react-router-dom"
 import Dashboard from "./2024/dashboard/Dashboard.tsx"
-import GenericReport from "./2024/GenericReport.tsx"
+import RaceReport from "./2024/RaceReport.tsx"
+import Venues from "./components/Venues.tsx"
 
 import { circuits } from "./2024/data/circuits.ts"
 import { results } from "./2024/data/results.ts"
@@ -17,43 +18,44 @@ createRoot(document.getElementById("root")!).render(
         <Route
           path="/2024"
           element={
-            <main className="h-screen w-screen ">
+            <main className="h-screen w-screen p-4 grid grid-rows-[0.5fr,_1fr_10fr]">
+              <nav className="bg-blue-300">
+                <Link to="/2024">Home</Link>
+              </nav>
+              <Venues />
               <Outlet />
             </main>
           }
         >
           <Route index element={<Dashboard />} />
-          <Route path="bahrain" element={<GenericReport results={results.bahrain} circuit={circuits.bahrain} />} />
+          <Route path="bahrain" element={<RaceReport results={results.bahrain} circuit={circuits.bahrain} />} />
           <Route
             path="saudi-arabia"
-            element={<GenericReport results={results.saudiArabia} circuit={circuits.saudiArabia} />}
+            element={<RaceReport results={results.saudiArabia} circuit={circuits.saudiArabia} />}
           />
-          <Route
-            path="australia"
-            element={<GenericReport results={results.australia} circuit={circuits.australia} />}
-          />
-          <Route path="japan" element={<GenericReport results={results.japan} circuit={circuits.japan} />} />
-          <Route path="china" element={<GenericReport results={results.china} circuit={circuits.china} />} />
-          <Route path="miami" element={<GenericReport results={results.miami} circuit={circuits.miami} />} />
-          <Route path="imola" element={<GenericReport results={results.imola} circuit={circuits.imola} />} />
-          <Route path="monaco" element={<GenericReport results={results.monaco} circuit={circuits.monaco} />} />
-          <Route path="canada" element={<GenericReport results={results.canada} circuit={circuits.canada} />} />
-          <Route path="spain" element={<GenericReport results={results.spain} circuit={circuits.spain} />} />
-          <Route path="austria" element={<GenericReport results={results.austria} circuit={circuits.austria} />} />
+          <Route path="australia" element={<RaceReport results={results.australia} circuit={circuits.australia} />} />
+          <Route path="japan" element={<RaceReport results={results.japan} circuit={circuits.japan} />} />
+          <Route path="china" element={<RaceReport results={results.china} circuit={circuits.china} />} />
+          <Route path="miami" element={<RaceReport results={results.miami} circuit={circuits.miami} />} />
+          <Route path="imola" element={<RaceReport results={results.imola} circuit={circuits.imola} />} />
+          <Route path="monaco" element={<RaceReport results={results.monaco} circuit={circuits.monaco} />} />
+          <Route path="canada" element={<RaceReport results={results.canada} circuit={circuits.canada} />} />
+          <Route path="spain" element={<RaceReport results={results.spain} circuit={circuits.spain} />} />
+          <Route path="austria" element={<RaceReport results={results.austria} circuit={circuits.austria} />} />
           <Route
             path="great-britain"
-            element={<GenericReport results={results.greatBritain} circuit={circuits.greatBritain} />}
+            element={<RaceReport results={results.greatBritain} circuit={circuits.greatBritain} />}
           />
-          <Route path="hungary" element={<GenericReport results={results.hungary} circuit={circuits.hungary} />} />
-          <Route path="belgium" element={<GenericReport results={results.belgium} circuit={circuits.belgium} />} />
+          <Route path="hungary" element={<RaceReport results={results.hungary} circuit={circuits.hungary} />} />
+          <Route path="belgium" element={<RaceReport results={results.belgium} circuit={circuits.belgium} />} />
           <Route
             path="netherlands"
-            element={<GenericReport results={results.netherlands} circuit={circuits.netherlands} />}
+            element={<RaceReport results={results.netherlands} circuit={circuits.netherlands} />}
           />
-          <Route path="italy" element={<GenericReport results={results.italy} circuit={circuits.italy} />} />
+          <Route path="italy" element={<RaceReport results={results.italy} circuit={circuits.italy} />} />
           <Route
             path="azerbaijan"
-            element={<GenericReport results={results.azerbaijan} circuit={circuits.azerbaijan} />}
+            element={<RaceReport results={results.azerbaijan} circuit={circuits.azerbaijan} />}
           />
         </Route>
       </Routes>

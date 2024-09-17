@@ -2,15 +2,29 @@ import { Result } from "./data/results"
 import { PositionChange } from "../components/PostionChange"
 import { Circuit } from "./data/circuits"
 
-export default function GenericReport({ results, circuit }: { results: Result; circuit: Circuit }) {
+export default function RaceReport({ results, circuit }: { results: Result; circuit: Circuit }) {
   console.log("race results", results)
   console.log("circuit", circuit)
   return (
-    <main className="max-h-full p-4 grid grid-cols-2 gap-2 ">
+    <main className="max-h-full grid grid-cols-2 gap-2 ">
       <section>
         <h2 className="text-4xl">Summary: {circuit.name}</h2>
+        <div className="stats w-full">
+          <article className="stat">
+            <p className="stat-title">Laps</p>
+            <p className="stat-value">{circuit.laps}</p>
+          </article>
+          <article className="stat">
+            <p className="stat-title">Lap Distance</p>
+            <p className="stat-value">{circuit.lapDistance} km</p>
+          </article>
+          <article className="stat">
+            <p className="stat-title">Race Distance</p>
+            <p className="stat-value">{circuit.raceDistance} km</p>
+          </article>
+        </div>
         <div className="">
-          <table className="table">
+          <table className="table table-sm">
             <thead>
               <tr>
                 <th>#</th>
@@ -42,22 +56,8 @@ export default function GenericReport({ results, circuit }: { results: Result; c
         </div>
       </section>
       <section className=" grid grid-flow-row-dense">
-        <div className="stats w-full">
-          <article className="stat">
-            <p className="stat-title">Laps</p>
-            <p className="stat-value">{circuit.laps}</p>
-          </article>
-          <article className="stat">
-            <p className="stat-title">Lap Distance</p>
-            <p className="stat-value">{circuit.lapDistance} km</p>
-          </article>
-          <article className="stat">
-            <p className="stat-title">Race Distance</p>
-            <p className="stat-value">{circuit.raceDistance} km</p>
-          </article>
-        </div>
-        <img className="w-5/6" src={circuit.pitStopGuide} alt="pit stops" />
-        <img className="w-5/6" src={circuit.tyreGuide} alt="tyre guides" />
+        <img className="w-4/5" src={circuit.pitStopGuide} alt="pit stops" />
+        <img className="w-4/5" src={circuit.tyreGuide} alt="tyre guides" />
       </section>
     </main>
   )
