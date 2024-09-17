@@ -1,12 +1,12 @@
 import { StrictMode } from "react"
 import { createRoot } from "react-dom/client"
-import { BrowserRouter, Link, Navigate, Outlet, Route, Routes } from "react-router-dom"
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom"
 import Dashboard from "./2024/dashboard/Dashboard.tsx"
 import RaceReport from "./2024/RaceReport.tsx"
-import Venues from "./components/Venues.tsx"
 
 import { circuits } from "./2024/data/circuits.ts"
 import { results } from "./2024/data/results.ts"
+import AppLayout from "./components/AppLayout.tsx"
 import "./index.css"
 
 createRoot(document.getElementById("root")!).render(
@@ -15,18 +15,7 @@ createRoot(document.getElementById("root")!).render(
       <Routes>
         <Route path="/" element={<Navigate to="/2024" />} />
         <Route path="/about" element={<main>About</main>} />
-        <Route
-          path="/2024"
-          element={
-            <main className="h-screen w-screen p-4 grid grid-rows-[0.5fr,_1fr_10fr]">
-              <nav className="bg-blue-300">
-                <Link to="/2024">Home</Link>
-              </nav>
-              <Venues />
-              <Outlet />
-            </main>
-          }
-        >
+        <Route path="/2024" element={<AppLayout />}>
           <Route index element={<Dashboard />} />
           <Route path="bahrain" element={<RaceReport results={results.bahrain} circuit={circuits.bahrain} />} />
           <Route

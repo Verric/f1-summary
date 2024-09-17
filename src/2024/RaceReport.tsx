@@ -1,29 +1,15 @@
 import { Result } from "./data/results"
 import { PositionChange } from "../components/PostionChange"
 import { Circuit } from "./data/circuits"
+import CircuitStats from "../components/CircuitStats"
 
 export default function RaceReport({ results, circuit }: { results: Result; circuit: Circuit }) {
-  console.log("race results", results)
-  console.log("circuit", circuit)
   return (
-    <main className="max-h-full grid grid-cols-2 gap-2 ">
+    <main className="max-h-full grid grid-cols-2 gap-2">
       <section>
         <h2 className="text-4xl">Summary: {circuit.name}</h2>
-        <div className="stats w-full">
-          <article className="stat">
-            <p className="stat-title">Laps</p>
-            <p className="stat-value">{circuit.laps}</p>
-          </article>
-          <article className="stat">
-            <p className="stat-title">Lap Distance</p>
-            <p className="stat-value">{circuit.lapDistance} km</p>
-          </article>
-          <article className="stat">
-            <p className="stat-title">Race Distance</p>
-            <p className="stat-value">{circuit.raceDistance} km</p>
-          </article>
-        </div>
-        <div className="">
+        <CircuitStats circuit={circuit} />
+        <div>
           <table className="table table-sm">
             <thead>
               <tr>
@@ -38,17 +24,17 @@ export default function RaceReport({ results, circuit }: { results: Result; circ
             </thead>
             <tbody>
               {results.drivers.map((result, index) => (
-                <tr key={index} className="hover">
-                  <td className="border-l-4 flex">
+                <tr key={index} className="hover hover:dark:bg-red-600">
+                  <td className="border-l-4 flex dark:text-white">
                     {result.pos}
                     <PositionChange starting={result.startingPos} final={result.pos} />
                   </td>
-                  <td>{result.startingPos}</td>
-                  <td>{result.driverId}</td>
-                  <td>{result.teamId}</td>
-                  <td>{result.time}</td>
-                  <td>{result.fastestLap}</td>
-                  <td>{result.avgSpeed?.toFixed(2)} </td>
+                  <td className="dark:text-white">{result.startingPos}</td>
+                  <td className="dark:text-white">{result.driverId}</td>
+                  <td className="dark:text-white">{result.teamId}</td>
+                  <td className="dark:text-white">{result.time}</td>
+                  <td className="dark:text-white">{result.fastestLap}</td>
+                  <td className="dark:text-white">{result.avgSpeed?.toFixed(2)} </td>
                 </tr>
               ))}
             </tbody>
