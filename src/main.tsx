@@ -5,6 +5,7 @@ import Dashboard from "./2024/dashboard/Dashboard.tsx"
 import GenericReport from "./2024/GenericReport.tsx"
 
 import { circuits } from "./2024/data/circuits.ts"
+import { results } from "./2024/data/results.ts"
 import "./index.css"
 
 createRoot(document.getElementById("root")!).render(
@@ -22,23 +23,38 @@ createRoot(document.getElementById("root")!).render(
           }
         >
           <Route index element={<Dashboard />} />
-          <Route path="bahrain" element={<GenericReport circuitInfo={circuits.bahrain} />} />
-          <Route path="saudi-arabia" element={<GenericReport circuitInfo={circuits.saudiArabia} />} />
-          <Route path="australia" element={<GenericReport circuitInfo={circuits.australia} />} />
-          <Route path="japan" element={<GenericReport circuitInfo={circuits.japan} />} />
-          <Route path="china" element={<GenericReport circuitInfo={circuits.china} />} />
-          <Route path="miami" element={<GenericReport circuitInfo={circuits.miami} />} />
-          <Route path="imola" element={<GenericReport circuitInfo={circuits.imola} />} />
-          <Route path="monaco" element={<GenericReport circuitInfo={circuits.monaco} />} />
-          <Route path="canada" element={<GenericReport circuitInfo={circuits.canada} />} />
-          <Route path="spain" element={<GenericReport circuitInfo={circuits.spain} />} />
-          <Route path="austria" element={<GenericReport circuitInfo={circuits.austria} />} />
-          <Route path="great-britain" element={<GenericReport circuitInfo={circuits.greatBritain} />} />
-          <Route path="hungary" element={<GenericReport circuitInfo={circuits.hungary} />} />
-          <Route path="belgium" element={<GenericReport circuitInfo={circuits.belgium} />} />
-          <Route path="netherlands" element={<GenericReport circuitInfo={circuits.netherlands} />} />
-          <Route path="italy" element={<GenericReport circuitInfo={circuits.italy} />} />
-          <Route path="azerbaijan" element={<GenericReport circuitInfo={circuits.azerbaijan} />} />
+          <Route path="bahrain" element={<GenericReport results={results.bahrain} circuit={circuits.bahrain} />} />
+          <Route
+            path="saudi-arabia"
+            element={<GenericReport results={results.saudiArabia} circuit={circuits.saudiArabia} />}
+          />
+          <Route
+            path="australia"
+            element={<GenericReport results={results.australia} circuit={circuits.australia} />}
+          />
+          <Route path="japan" element={<GenericReport results={results.japan} circuit={circuits.japan} />} />
+          <Route path="china" element={<GenericReport results={results.china} circuit={circuits.china} />} />
+          <Route path="miami" element={<GenericReport results={results.miami} circuit={circuits.miami} />} />
+          <Route path="imola" element={<GenericReport results={results.imola} circuit={circuits.imola} />} />
+          <Route path="monaco" element={<GenericReport results={results.monaco} circuit={circuits.monaco} />} />
+          <Route path="canada" element={<GenericReport results={results.canada} circuit={circuits.canada} />} />
+          <Route path="spain" element={<GenericReport results={results.spain} circuit={circuits.spain} />} />
+          <Route path="austria" element={<GenericReport results={results.austria} circuit={circuits.austria} />} />
+          <Route
+            path="great-britain"
+            element={<GenericReport results={results.greatBritain} circuit={circuits.greatBritain} />}
+          />
+          <Route path="hungary" element={<GenericReport results={results.hungary} circuit={circuits.hungary} />} />
+          <Route path="belgium" element={<GenericReport results={results.belgium} circuit={circuits.belgium} />} />
+          <Route
+            path="netherlands"
+            element={<GenericReport results={results.netherlands} circuit={circuits.netherlands} />}
+          />
+          <Route path="italy" element={<GenericReport results={results.italy} circuit={circuits.italy} />} />
+          <Route
+            path="azerbaijan"
+            element={<GenericReport results={results.azerbaijan} circuit={circuits.azerbaijan} />}
+          />
         </Route>
       </Routes>
     </BrowserRouter>

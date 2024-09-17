@@ -17,6 +17,7 @@ import GreatBritain from "../../assets/2024/circuit_icons/great-britain-outline.
 import Hungary from "../../assets/2024/circuit_icons/hungary-outline.png"
 import Netherlands from "../../assets/2024/circuit_icons/netherlands-outline.png"
 import Italy from "../../assets/2024/circuit_icons/monza-outline.png"
+import Azerbaijan from "../../assets/2024/circuit_icons/azerbaijan-outline.png"
 
 export default function Dashboard() {
   return (
@@ -39,6 +40,7 @@ export default function Dashboard() {
           <LinkCard image={Belgium} name="Belgium" />
           <LinkCard image={Netherlands} name="Netherlands" />
           <LinkCard image={Italy} name="Italy" />
+          <LinkCard image={Azerbaijan} name="azerbaijan" />
         </section>
       </section>
       <LeaderboardLayout />

@@ -9,7 +9,7 @@ export default function LeaderboardLayout() {
       <input
         type="range"
         min={1}
-        max={19}
+        max={20}
         value={race}
         onChange={e => setRace(Number(e.target.value))}
         className="range range-primary"
@@ -34,6 +34,7 @@ export default function LeaderboardLayout() {
         <span>Belgium</span>
         <span>Netherlands</span>
         <span>Italy</span>
+        <span>Azerbaijan</span>
       </div>
       <section className="grid grid-cols-2">
         <ConstructorLeaderboard race={race} />

@@ -1,7 +1,7 @@
 import { teams } from "./teams"
 import { drivers } from "./drivers"
 
-interface Results {
+export interface Result {
   race: number
   location: string
   date: string
@@ -22,8 +22,8 @@ interface Results {
     points: number
   }[]
 }
-export const results: Results[] = [
-  {
+export const results: Record<string, Result> = {
+  bahrain: {
     race: 1,
     location: "Bahrain",
     date: "2024-03-02",
@@ -262,7 +262,7 @@ export const results: Results[] = [
       { teamId: "williams", points: 0 },
     ],
   },
-  {
+  saudiArabia: {
     race: 2,
     location: "Saudi Arabia",
     date: "2024-03-09",
@@ -501,7 +501,7 @@ export const results: Results[] = [
       { teamId: "alpine", points: 0 },
     ],
   },
-  {
+  australia: {
     race: 3,
     location: "Australia",
     date: "2024-03-24",
@@ -729,7 +729,7 @@ export const results: Results[] = [
       { teamId: "mercedes", points: 0 },
     ],
   },
-  {
+  japan: {
     race: 4,
     location: "Japan",
     date: "2024-04-07",
@@ -968,7 +968,7 @@ export const results: Results[] = [
       { teamId: "williams", points: 0 },
     ],
   },
-  {
+  chinaSprint: {
     race: 1.5,
     location: "China - Sprint",
     date: "2024-04-21",
@@ -1208,7 +1208,7 @@ export const results: Results[] = [
       { teamId: "williams", points: 0 },
     ],
   },
-  {
+  china: {
     race: 5,
     location: "China",
     date: "2024-04-21",
@@ -1447,7 +1447,7 @@ export const results: Results[] = [
       { teamId: "rb", points: 0 },
     ],
   },
-  {
+  miamiSprint: {
     race: 5.5,
     location: "Miami - Sprint",
     date: "2024-05-05",
@@ -1688,7 +1688,7 @@ export const results: Results[] = [
       { teamId: "aston_martin", points: 0 },
     ],
   },
-  {
+  miami: {
     race: 6,
     location: "Miami",
     date: "2024-05-05",
@@ -1927,7 +1927,7 @@ export const results: Results[] = [
       { teamId: "williams", points: 0 },
     ],
   },
-  {
+  imola: {
     race: 7,
     location: "Imola",
     date: "2024-05-19",
@@ -2166,7 +2166,7 @@ export const results: Results[] = [
       { teamId: "williams", points: 0 },
     ],
   },
-  {
+  monaco: {
     race: 8,
     location: "Monaco",
     date: "2024-05-26",
@@ -2405,7 +2405,7 @@ export const results: Results[] = [
       { teamId: "haas", points: 0 },
     ],
   },
-  {
+  canada: {
     race: 9,
     location: "Canada",
     date: "2024-06-09",
@@ -2644,7 +2644,7 @@ export const results: Results[] = [
       { teamId: "williams", points: 0 },
     ],
   },
-  {
+  spain: {
     race: 10,
     location: "Spain",
     date: "2024-06-23",
@@ -2883,7 +2883,7 @@ export const results: Results[] = [
       { teamId: "williams", points: 0 },
     ],
   },
-  {
+  austriaSprint: {
     race: 10.5,
     location: "Austria - Sprint",
     date: "2024-06-30",
@@ -3122,7 +3122,7 @@ export const results: Results[] = [
       { teamId: "sauber", points: 0 },
     ],
   },
-  {
+  austria: {
     race: 11,
     location: "Austria",
     date: "2024-06-30",
@@ -3361,7 +3361,7 @@ export const results: Results[] = [
       { teamId: "williams", points: 0 },
     ],
   },
-  {
+  greatBritain: {
     race: 12,
     location: "Great Britain",
     date: "2024-07-07",
@@ -3600,7 +3600,7 @@ export const results: Results[] = [
       { teamId: "alpine", points: 0 },
     ],
   },
-  {
+  hungary: {
     race: 13,
     location: "Hungary",
     date: "2024-07-21",
@@ -3839,7 +3839,7 @@ export const results: Results[] = [
       { teamId: "alpine", points: 0 },
     ],
   },
-  {
+  belgium: {
     race: 14,
     location: "Belgium",
     date: "2024-07-28",
@@ -4078,7 +4078,7 @@ export const results: Results[] = [
       { teamId: "williams", points: 0 },
     ],
   },
-  {
+  netherlands: {
     race: 15,
     location: "Netherlands",
     date: "2024-08-25",
@@ -4317,7 +4317,7 @@ export const results: Results[] = [
       { teamId: "williams", points: 0 },
     ],
   },
-  {
+  italy: {
     race: 16,
     location: "Italy",
     date: "2024-09-01",
@@ -4556,7 +4556,7 @@ export const results: Results[] = [
       { teamId: "sauber", points: 0 },
     ],
   },
-  {
+  azerbaijan: {
     race: 17,
     location: "Azerbaijan",
     date: "2024-09-15",
@@ -4795,20 +4795,21 @@ export const results: Results[] = [
       { teamId: "rb", points: 0 },
     ],
   },
-]
+}
 
 // Aggregate driver standings up to a specific race
 export function calculateDriverStandings(upToRace: number) {
   const driverStandings = new Map<string, { points: number }>()
-
-  results.slice(0, upToRace).forEach(race => {
-    race.drivers.forEach(({ driverId, points }) => {
-      if (!driverStandings.has(driverId)) {
-        driverStandings.set(driverId, { points: 0 })
-      }
-      driverStandings.get(driverId)!.points += points
+  Object.values(results)
+    .slice(0, upToRace)
+    .forEach(race => {
+      race.drivers.forEach(({ driverId, points }) => {
+        if (!driverStandings.has(driverId)) {
+          driverStandings.set(driverId, { points: 0 })
+        }
+        driverStandings.get(driverId)!.points += points
+      })
     })
-  })
 
   return Array.from(driverStandings.entries()).sort((a, b) => b[1].points - a[1].points)
 }
@@ -4836,14 +4837,16 @@ export function getDriverStandings(races: number) {
 export function calculateConstructorsStandings(upToRace: number) {
   const constructorStandings = new Map<string, { points: number }>()
 
-  results.slice(0, upToRace).forEach(race => {
-    race.constructors.forEach(({ teamId, points }) => {
-      if (!constructorStandings.has(teamId)) {
-        constructorStandings.set(teamId, { points: 0 })
-      }
-      constructorStandings.get(teamId)!.points += points
+  Object.values(results)
+    .slice(0, upToRace)
+    .forEach(race => {
+      race.constructors.forEach(({ teamId, points }) => {
+        if (!constructorStandings.has(teamId)) {
+          constructorStandings.set(teamId, { points: 0 })
+        }
+        constructorStandings.get(teamId)!.points += points
+      })
     })
-  })
 
   return Array.from(constructorStandings.entries()).sort((a, b) => b[1].points - a[1].points)
 }
