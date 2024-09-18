@@ -1,5 +1,4 @@
 import { teams } from "./teams"
-import { drivers } from "./drivers"
 
 export interface Result {
   race: number
@@ -30,7 +29,7 @@ export const results: Record<string, Result> = {
     drivers: [
       {
         pos: 1,
-        driverId: "max_verstappen",
+        driverId: "Max Verstappen",
         teamId: "Red Bull Racing Honda RBPT",
         laps: 57,
         time: "1:31:44.742",
@@ -41,7 +40,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 2,
-        driverId: "sergio_perez",
+        driverId: "Sergio Perez",
         teamId: "Red Bull Racing Honda RBPT",
         laps: 57,
         time: "+22.457s",
@@ -52,7 +51,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 3,
-        driverId: "carlos_sainz",
+        driverId: "Carlos Sainz",
         teamId: "Ferrari",
         laps: 57,
         time: "+25.110s",
@@ -63,7 +62,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 4,
-        driverId: "charles_leclerc",
+        driverId: "Charles Leclerc",
         teamId: "Ferrari",
         laps: 57,
         time: "+39.669s",
@@ -74,7 +73,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 5,
-        driverId: "george_russell",
+        driverId: "George Russell",
         teamId: "Mercedes",
         laps: 57,
         time: "+46.788s",
@@ -85,7 +84,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 6,
-        driverId: "lando_norris",
+        driverId: "Lando Norris",
         teamId: "McLaren Mercedes",
         laps: 57,
         time: "+48.458s",
@@ -96,7 +95,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 7,
-        driverId: "lewis_hamilton",
+        driverId: "Lewis Hamilton",
         teamId: "Mercedes",
         laps: 57,
         time: "+50.324s",
@@ -107,7 +106,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 8,
-        driverId: "oscar_piastri",
+        driverId: "Oscar Piastri",
         teamId: "McLaren Mercedes",
         laps: 57,
         time: "+56.082s",
@@ -118,7 +117,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 9,
-        driverId: "fernando_alonso",
+        driverId: "Fernando Alonso",
         teamId: "Aston Martin Aramco Mercedes",
         laps: 57,
         time: "+74.887s",
@@ -129,7 +128,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 10,
-        driverId: "lance_stroll",
+        driverId: "Lance Stroll",
         teamId: "Aston Martin Aramco Mercedes",
         laps: 57,
         time: "+93.216s",
@@ -140,7 +139,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 11,
-        driverId: "zhou_guanyu",
+        driverId: "Zhou Guanyu",
         teamId: "Kick Sauber Ferrari",
         laps: 56,
         time: "+1 lap",
@@ -151,7 +150,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 12,
-        driverId: "kevin_magnussen",
+        driverId: "Kevin Magnussen",
         teamId: "Haas Ferrari",
         laps: 56,
         time: "+1 lap",
@@ -162,7 +161,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 13,
-        driverId: "daniel_ricciardo",
+        driverId: "Daniel Ricciardo",
         teamId: "RB Honda RBPT",
         laps: 56,
         time: "+1 lap",
@@ -173,7 +172,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 14,
-        driverId: "yuki_tsunoda",
+        driverId: "Yuki Tsunoda",
         teamId: "RB Honda RBPT",
         laps: 56,
         time: "+1 lap",
@@ -184,7 +183,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 15,
-        driverId: "alexander_albon",
+        driverId: "Alexander Albon",
         teamId: "Williams Mercedes",
         laps: 56,
         time: "+1 lap",
@@ -195,7 +194,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 16,
-        driverId: "nico_hulkenberg",
+        driverId: "Nico Hulkenburg",
         teamId: "Haas Ferrari",
         laps: 56,
         time: "+1 lap",
@@ -206,7 +205,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 17,
-        driverId: "esteban_ocon",
+        driverId: "Esteban Ocon",
         teamId: "Alpine Renault",
         laps: 56,
         time: "+1 lap",
@@ -217,7 +216,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 18,
-        driverId: "pierre_gasly",
+        driverId: "Pierre Gasly",
         teamId: "Alpine Renault",
         laps: 56,
         time: "+1 lap",
@@ -228,7 +227,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 19,
-        driverId: "valtteri_bottas",
+        driverId: "Valtteri Bottas",
         teamId: "Kick Sauber Ferrari",
         laps: 56,
         time: "+1 lap",
@@ -239,7 +238,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 20,
-        driverId: "logan_sargeant",
+        driverId: "Logan Sargeant",
         teamId: "Williams Mercedes",
         laps: 55,
         time: "+2 laps",
@@ -269,7 +268,7 @@ export const results: Record<string, Result> = {
     drivers: [
       {
         pos: 1,
-        driverId: "max_verstappen",
+        driverId: "Max Verstappen",
         teamId: "Red Bull Racing Honda RBPT",
         laps: 50,
         time: "1:20:43.273",
@@ -280,7 +279,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 2,
-        driverId: "sergio_perez",
+        driverId: "Sergio Perez",
         teamId: "Red Bull Racing Honda RBPT",
         laps: 50,
         time: "+13.643s",
@@ -291,7 +290,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 3,
-        driverId: "charles_leclerc",
+        driverId: "Charles Leclerc",
         teamId: "Ferrari",
         laps: 50,
         time: "+18.639s",
@@ -302,7 +301,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 4,
-        driverId: "oscar_piastri",
+        driverId: "Oscar Piastri",
         teamId: "McLaren Mercedes",
         laps: 50,
         time: "+32.007s",
@@ -313,7 +312,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 5,
-        driverId: "fernando_alonso",
+        driverId: "Fernando Alonso",
         teamId: "Aston Martin Aramco Mercedes",
         laps: 50,
         time: "+35.759s",
@@ -324,7 +323,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 6,
-        driverId: "george_russell",
+        driverId: "George Russell",
         teamId: "Mercedes",
         laps: 50,
         time: "+39.936s",
@@ -335,7 +334,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 7,
-        driverId: "oliver_bearman",
+        driverId: "Oliver Bearman",
         teamId: "Ferrari",
         laps: 50,
         time: "+42.679s",
@@ -346,7 +345,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 8,
-        driverId: "lando_norris",
+        driverId: "Lando Norris",
         teamId: "McLaren Mercedes",
         laps: 50,
         time: "+45.708s",
@@ -357,7 +356,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 9,
-        driverId: "lewis_hamilton",
+        driverId: "Lewis Hamilton",
         teamId: "Mercedes",
         laps: 50,
         time: "+47.391s",
@@ -368,7 +367,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 10,
-        driverId: "nico_hulkenberg",
+        driverId: "Nico Hulkenburg",
         teamId: "Haas Ferrari",
         laps: 50,
         time: "+76.996s",
@@ -379,7 +378,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 11,
-        driverId: "alexander_albon",
+        driverId: "Alexander Albon",
         teamId: "Williams Mercedes",
         laps: 50,
         time: "+88.354s",
@@ -390,7 +389,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 12,
-        driverId: "kevin_magnussen",
+        driverId: "Kevin Magnussen",
         teamId: "Haas Ferrari",
         laps: 50,
         time: "+105.737s",
@@ -401,7 +400,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 13,
-        driverId: "esteban_ocon",
+        driverId: "Esteban Ocon",
         teamId: "Alpine Renault",
         laps: 49,
         time: "+1 lap",
@@ -412,7 +411,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 14,
-        driverId: "logan_sargeant",
+        driverId: "Logan Sargeant",
         teamId: "Williams Mercedes",
         laps: 49,
         time: "+1 lap",
@@ -423,7 +422,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 15,
-        driverId: "yuki_tsunoda",
+        driverId: "Yuki Tsunoda",
         teamId: "RB Honda RBPT",
         laps: 49,
         time: "+1 lap",
@@ -434,7 +433,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 16,
-        driverId: "daniel_ricciardo",
+        driverId: "Daniel Ricciardo",
         teamId: "RB Honda RBPT",
         laps: 49,
         time: "+1 lap",
@@ -445,7 +444,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 17,
-        driverId: "valtteri_bottas",
+        driverId: "Valtteri Bottas",
         teamId: "Kick Sauber Ferrari",
         laps: 49,
         time: "+1 lap",
@@ -456,7 +455,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 18,
-        driverId: "zhou_guanyu",
+        driverId: "Zhou Guanyu",
         teamId: "Kick Sauber Ferrari",
         laps: 49,
         time: "+1 lap",
@@ -467,7 +466,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: "NC",
-        driverId: "pierre_gasly",
+        driverId: "Pierre Gasly",
         teamId: "Alpine Renault",
         laps: 1,
         time: "DNF",
@@ -478,7 +477,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: "NC",
-        driverId: "lance_stroll",
+        driverId: "Lance Stroll",
         teamId: "Aston Martin Aramco Mercedes",
         laps: 5,
         time: "DNF",
@@ -508,7 +507,7 @@ export const results: Record<string, Result> = {
     drivers: [
       {
         pos: 1,
-        driverId: "carlos_sainz",
+        driverId: "Carlos Sainz",
         teamId: "Ferrari",
         laps: 58,
         time: "1:20:26.843",
@@ -519,7 +518,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 2,
-        driverId: "charles_leclerc",
+        driverId: "Charles Leclerc",
         teamId: "Ferrari",
         laps: 58,
         time: "+2.366s",
@@ -530,7 +529,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 3,
-        driverId: "lando_norris",
+        driverId: "Lando Norris",
         teamId: "McLaren Mercedes",
         laps: 58,
         time: "+5.904s",
@@ -541,7 +540,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 4,
-        driverId: "oscar_piastri",
+        driverId: "Oscar Piastri",
         teamId: "McLaren Mercedes",
         laps: 58,
         time: "+35.770s",
@@ -552,7 +551,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 5,
-        driverId: "sergio_perez",
+        driverId: "Sergio Perez",
         teamId: "Red Bull Racing Honda RBPT",
         laps: 58,
         time: "+56.309s",
@@ -563,7 +562,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 6,
-        driverId: "lance_stroll",
+        driverId: "Lance Stroll",
         teamId: "Aston Martin Aramco Mercedes",
         laps: 58,
         time: "+93.222s",
@@ -574,7 +573,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 7,
-        driverId: "yuki_tsunoda",
+        driverId: "Yuki Tsunoda",
         teamId: "RB Honda RBPT",
         laps: 58,
         time: "+95.601s",
@@ -585,7 +584,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 8,
-        driverId: "fernando_alonso",
+        driverId: "Fernando Alonso",
         teamId: "Aston Martin Aramco Mercedes",
         laps: 58,
         time: "+100.992s",
@@ -596,7 +595,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 9,
-        driverId: "nico_hulkenberg",
+        driverId: "Nico Hulkenburg",
         teamId: "Haas Ferrari",
         laps: 58,
         time: "+104.553s",
@@ -607,7 +606,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 10,
-        driverId: "kevin_magnussen",
+        driverId: "Kevin Magnussen",
         teamId: "Haas Ferrari",
         laps: 57,
         time: "+1 lap",
@@ -618,7 +617,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 11,
-        driverId: "alexander_albon",
+        driverId: "Alexander Albon",
         teamId: "Williams Mercedes",
         laps: 57,
         time: "+1 lap",
@@ -629,7 +628,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 12,
-        driverId: "daniel_ricciardo",
+        driverId: "Daniel Ricciardo",
         teamId: "RB Honda RBPT",
         laps: 57,
         time: "+1 lap",
@@ -640,7 +639,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 13,
-        driverId: "pierre_gasly",
+        driverId: "Pierre Gasly",
         teamId: "Alpine Renault",
         laps: 57,
         time: "+1 lap",
@@ -651,7 +650,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 14,
-        driverId: "valtteri_bottas",
+        driverId: "Valtteri Bottas",
         teamId: "Kick Sauber Ferrari",
         laps: 57,
         time: "+1 lap",
@@ -662,7 +661,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 15,
-        driverId: "zhou_guanyu",
+        driverId: "Zhou Guanyu",
         teamId: "Kick Sauber Ferrari",
         laps: 57,
         time: "+1 lap",
@@ -673,7 +672,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 16,
-        driverId: "esteban_ocon",
+        driverId: "Esteban Ocon",
         teamId: "Alpine Renault",
         laps: 57,
         time: "+1 lap",
@@ -684,7 +683,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 17,
-        driverId: "george_russell",
+        driverId: "George Russell",
         teamId: "Mercedes",
         laps: 56,
         time: "DNF",
@@ -695,7 +694,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: "NC",
-        driverId: "max_verstappen",
+        driverId: "Max Verstappen",
         teamId: "Red Bull Racing Honda RBPT",
         laps: 3,
         time: "DNF",
@@ -706,7 +705,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: "NC",
-        driverId: "lewis_hamilton",
+        driverId: "Lewis Hamilton",
         teamId: "Mercedes",
         laps: 15,
         time: "DNF",
@@ -736,7 +735,7 @@ export const results: Record<string, Result> = {
     drivers: [
       {
         pos: 1,
-        driverId: "max_verstappen",
+        driverId: "Max Verstappen",
         teamId: "Red Bull Racing Honda RBPT",
         laps: 53,
         time: "1:54:23.566",
@@ -747,7 +746,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 2,
-        driverId: "sergio_perez",
+        driverId: "Sergio Perez",
         teamId: "Red Bull Racing Honda RBPT",
         laps: 53,
         time: "+12.535s",
@@ -758,7 +757,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 3,
-        driverId: "carlos_sainz",
+        driverId: "Carlos Sainz",
         teamId: "Ferrari",
         laps: 53,
         time: "+20.866s",
@@ -769,7 +768,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 4,
-        driverId: "charles_leclerc",
+        driverId: "Charles Leclerc",
         teamId: "Ferrari",
         laps: 53,
         time: "+26.522s",
@@ -780,7 +779,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 5,
-        driverId: "lando_norris",
+        driverId: "Lando Norris",
         teamId: "McLaren Mercedes",
         laps: 53,
         time: "+29.700s",
@@ -791,7 +790,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 6,
-        driverId: "fernando_alonso",
+        driverId: "Fernando Alonso",
         teamId: "Aston Martin Aramco Mercedes",
         laps: 53,
         time: "+44.272s",
@@ -802,7 +801,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 7,
-        driverId: "george_russell",
+        driverId: "George Russell",
         teamId: "Mercedes",
         laps: 53,
         time: "+45.951s",
@@ -813,7 +812,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 8,
-        driverId: "oscar_piastri",
+        driverId: "Oscar Piastri",
         teamId: "McLaren Mercedes",
         laps: 53,
         time: "+47.525s",
@@ -824,7 +823,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 9,
-        driverId: "lewis_hamilton",
+        driverId: "Lewis Hamilton",
         teamId: "Mercedes",
         laps: 53,
         time: "+48.626s",
@@ -835,7 +834,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 10,
-        driverId: "yuki_tsunoda",
+        driverId: "Yuki Tsunoda",
         teamId: "RB Honda RBPT",
         laps: 52,
         time: "+1 lap",
@@ -846,7 +845,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 11,
-        driverId: "nico_hulkenberg",
+        driverId: "Nico Hulkenburg",
         teamId: "Haas Ferrari",
         laps: 52,
         time: "+1 lap",
@@ -857,7 +856,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 12,
-        driverId: "lance_stroll",
+        driverId: "Lance Stroll",
         teamId: "Aston Martin Aramco Mercedes",
         laps: 52,
         time: "+1 lap",
@@ -868,7 +867,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 13,
-        driverId: "kevin_magnussen",
+        driverId: "Kevin Magnussen",
         teamId: "Haas Ferrari",
         laps: 52,
         time: "+1 lap",
@@ -879,7 +878,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 14,
-        driverId: "valtteri_bottas",
+        driverId: "Valtteri Bottas",
         teamId: "Kick Sauber Ferrari",
         laps: 52,
         time: "+1 lap",
@@ -890,7 +889,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 15,
-        driverId: "esteban_ocon",
+        driverId: "Esteban Ocon",
         teamId: "Alpine Renault",
         laps: 52,
         time: "+1 lap",
@@ -901,7 +900,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 16,
-        driverId: "pierre_gasly",
+        driverId: "Pierre Gasly",
         teamId: "Alpine Renault",
         laps: 52,
         time: "+1 lap",
@@ -912,7 +911,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 17,
-        driverId: "logan_sargeant",
+        driverId: "Logan Sargeant",
         teamId: "Williams Mercedes",
         laps: 52,
         time: "+1 lap",
@@ -923,7 +922,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: "NC",
-        driverId: "daniel_ricciardo",
+        driverId: "Daniel Ricciardo",
         teamId: "RB Honda RBPT",
         laps: 0,
         time: "DNF",
@@ -934,7 +933,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: "NC",
-        driverId: "alexander_albon",
+        driverId: "Alexander Albon",
         teamId: "Williams Mercedes",
         laps: 0,
         time: "DNF",
@@ -945,7 +944,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: "NC",
-        driverId: "zhou_guanyu",
+        driverId: "Zhou Guanyu",
         teamId: "Kick Sauber Ferrari",
         laps: 12,
         time: "DNF",
@@ -975,7 +974,7 @@ export const results: Record<string, Result> = {
     drivers: [
       {
         pos: 1,
-        driverId: "max_verstappen",
+        driverId: "Max Verstappen",
         teamId: "red_bull",
         points: 8,
         time: "",
@@ -986,7 +985,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 2,
-        driverId: "lewis_hamilton",
+        driverId: "Lewis Hamilton",
         teamId: "mercedes",
         points: 7,
         time: "",
@@ -997,7 +996,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 3,
-        driverId: "sergio_perez",
+        driverId: "Sergio Perez",
         teamId: "red_bull",
         points: 6,
         time: "",
@@ -1008,7 +1007,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 4,
-        driverId: "charles_leclerc",
+        driverId: "Charles Leclerc",
         teamId: "ferrari",
         points: 5,
         time: "",
@@ -1019,7 +1018,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 5,
-        driverId: "carlos_sainz",
+        driverId: "Carlos Sainz",
         teamId: "ferrari",
         points: 4,
         time: "",
@@ -1030,7 +1029,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 6,
-        driverId: "lando_norris",
+        driverId: "Lando Norris",
         teamId: "mclaren",
         points: 3,
         time: "",
@@ -1041,7 +1040,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 7,
-        driverId: "oscar_piastri",
+        driverId: "Oscar Piastri",
         teamId: "mclaren",
         points: 2,
         time: "",
@@ -1052,7 +1051,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 8,
-        driverId: "george_russell",
+        driverId: "George Russell",
         teamId: "mercedes",
         points: 1,
         time: "",
@@ -1063,7 +1062,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 9,
-        driverId: "zhou_guanyu",
+        driverId: "Zhou Guanyu",
         teamId: "sauber",
         points: 0,
         time: "",
@@ -1074,7 +1073,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 10,
-        driverId: "kevin_magnussen",
+        driverId: "Kevin Magnussen",
         teamId: "haas",
         points: 0,
         time: "",
@@ -1085,7 +1084,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 11,
-        driverId: "daniel_ricciardo",
+        driverId: "Daniel Ricciardo",
         teamId: "rb",
         points: 0,
         time: "",
@@ -1096,7 +1095,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 12,
-        driverId: "valtteri_bottas",
+        driverId: "Valtteri Bottas",
         teamId: "sauber",
         points: 0,
         time: "",
@@ -1107,7 +1106,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 13,
-        driverId: "esteban_ocon",
+        driverId: "Esteban Ocon",
         teamId: "alpine",
         points: 0,
         time: "",
@@ -1118,7 +1117,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 14,
-        driverId: "lance_stroll",
+        driverId: "Lance Stroll",
         teamId: "aston_martin",
         points: 0,
         time: "",
@@ -1129,7 +1128,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 15,
-        driverId: "pierre_gasly",
+        driverId: "Pierre Gasly",
         teamId: "alpine",
         points: 0,
         time: "",
@@ -1140,7 +1139,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 16,
-        driverId: "yuki_tsunoda",
+        driverId: "Yuki Tsunoda",
         teamId: "rb",
         points: 0,
         time: "",
@@ -1151,7 +1150,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 17,
-        driverId: "alexander_albon",
+        driverId: "Alexander Albon",
         teamId: "williams",
         points: 0,
         time: "",
@@ -1162,7 +1161,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 18,
-        driverId: "logan_sargeant",
+        driverId: "Logan Sargeant",
         teamId: "williams",
         points: 0,
         time: "",
@@ -1173,7 +1172,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 19,
-        driverId: "nico_hulkenberg",
+        driverId: "Nico Hulkenburg",
         teamId: "haas",
         points: 0,
         time: "",
@@ -1184,7 +1183,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 20,
-        driverId: "fernando_alonso",
+        driverId: "Fernando Alonso",
         teamId: "aston_martin",
         points: 0,
         time: "",
@@ -1215,7 +1214,7 @@ export const results: Record<string, Result> = {
     drivers: [
       {
         pos: 1,
-        driverId: "max_verstappen",
+        driverId: "Max Verstappen",
         teamId: "Red Bull Racing Honda RBPT",
         laps: 56,
         time: "1:40:52.554",
@@ -1226,7 +1225,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 2,
-        driverId: "lando_norris",
+        driverId: "Lando Norris",
         teamId: "McLaren Mercedes",
         laps: 56,
         time: "+13.773s",
@@ -1237,7 +1236,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 3,
-        driverId: "sergio_perez",
+        driverId: "Sergio Perez",
         teamId: "Red Bull Racing Honda RBPT",
         laps: 56,
         time: "+19.160s",
@@ -1248,7 +1247,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 4,
-        driverId: "charles_leclerc",
+        driverId: "Charles Leclerc",
         teamId: "Ferrari",
         laps: 56,
         time: "+23.623s",
@@ -1259,7 +1258,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 5,
-        driverId: "carlos_sainz",
+        driverId: "Carlos Sainz",
         teamId: "Ferrari",
         laps: 56,
         time: "+33.983s",
@@ -1270,7 +1269,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 6,
-        driverId: "george_russell",
+        driverId: "George Russell",
         teamId: "Mercedes",
         laps: 56,
         time: "+38.724s",
@@ -1281,7 +1280,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 7,
-        driverId: "fernando_alonso",
+        driverId: "Fernando Alonso",
         teamId: "Aston Martin Aramco Mercedes",
         laps: 56,
         time: "+43.414s",
@@ -1292,7 +1291,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 8,
-        driverId: "oscar_piastri",
+        driverId: "Oscar Piastri",
         teamId: "McLaren Mercedes",
         laps: 56,
         time: "+56.198s",
@@ -1303,7 +1302,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 9,
-        driverId: "lewis_hamilton",
+        driverId: "Lewis Hamilton",
         teamId: "Mercedes",
         laps: 56,
         time: "+57.986s",
@@ -1314,7 +1313,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 10,
-        driverId: "nico_hulkenberg",
+        driverId: "Nico Hulkenburg",
         teamId: "Haas Ferrari",
         laps: 56,
         time: "+60.476s",
@@ -1325,7 +1324,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 11,
-        driverId: "esteban_ocon",
+        driverId: "Esteban Ocon",
         teamId: "Alpine Renault",
         laps: 56,
         time: "+62.812s",
@@ -1336,7 +1335,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 12,
-        driverId: "alexander_albon",
+        driverId: "Alexander Albon",
         teamId: "Williams Mercedes",
         laps: 56,
         time: "+65.506s",
@@ -1347,7 +1346,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 13,
-        driverId: "pierre_gasly",
+        driverId: "Pierre Gasly",
         teamId: "Alpine Renault",
         laps: 56,
         time: "+69.223s",
@@ -1358,7 +1357,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 14,
-        driverId: "zhou_guanyu",
+        driverId: "Zhou Guanyu",
         teamId: "Kick Sauber Ferrari",
         laps: 56,
         time: "+71.689s",
@@ -1369,7 +1368,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 15,
-        driverId: "lance_stroll",
+        driverId: "Lance Stroll",
         teamId: "Aston Martin Aramco Mercedes",
         laps: 56,
         time: "+82.786s",
@@ -1380,7 +1379,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 16,
-        driverId: "kevin_magnussen",
+        driverId: "Kevin Magnussen",
         teamId: "Haas Ferrari",
         laps: 56,
         time: "+87.533s",
@@ -1391,7 +1390,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 17,
-        driverId: "logan_sargeant",
+        driverId: "Logan Sargeant",
         teamId: "Williams Mercedes",
         laps: 56,
         time: "+95.110s",
@@ -1402,7 +1401,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: "NC",
-        driverId: "daniel_ricciardo",
+        driverId: "Daniel Ricciardo",
         teamId: "RB Honda RBPT",
         laps: 33,
         time: "DNF",
@@ -1413,7 +1412,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: "NC",
-        driverId: "yuki_tsunoda",
+        driverId: "Yuki Tsunoda",
         teamId: "RB Honda RBPT",
         laps: 26,
         time: "DNF",
@@ -1424,7 +1423,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: "NC",
-        driverId: "valtteri_bottas",
+        driverId: "Valtteri Bottas",
         teamId: "Kick Sauber Ferrari",
         laps: 19,
         time: "DNF",
@@ -1454,7 +1453,7 @@ export const results: Record<string, Result> = {
     drivers: [
       {
         pos: 1,
-        driverId: "max_verstappen",
+        driverId: "Max Verstappen",
         teamId: "red_bull",
         points: 8,
         time: "",
@@ -1465,7 +1464,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 2,
-        driverId: "charles_leclerc",
+        driverId: "Charles Leclerc",
         teamId: "ferrari",
         points: 7,
         time: "",
@@ -1476,7 +1475,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 3,
-        driverId: "sergio_perez",
+        driverId: "Sergio Perez",
         teamId: "red_bull",
         points: 6,
         time: "",
@@ -1487,7 +1486,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 4,
-        driverId: "daniel_ricciardo",
+        driverId: "Daniel Ricciardo",
         teamId: "rb",
         points: 5,
         time: "",
@@ -1498,7 +1497,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 5,
-        driverId: "carlos_sainz",
+        driverId: "Carlos Sainz",
         teamId: "ferrari",
         points: 4,
         time: "",
@@ -1509,7 +1508,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 6,
-        driverId: "oscar_piastri",
+        driverId: "Oscar Piastri",
         teamId: "mclaren",
         points: 3,
         time: "",
@@ -1520,7 +1519,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 7,
-        driverId: "nico_hulkenberg",
+        driverId: "Nico Hulkenburg",
         teamId: "haas",
         points: 2,
         time: "",
@@ -1531,7 +1530,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 8,
-        driverId: "yuki_tsunoda",
+        driverId: "Yuki Tsunoda",
         teamId: "rb",
         points: 1,
         time: "",
@@ -1542,7 +1541,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 9,
-        driverId: "pierre_gasly",
+        driverId: "Pierre Gasly",
         teamId: "alpine",
         points: 0,
         time: "",
@@ -1553,7 +1552,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 10,
-        driverId: "logan_sargeant",
+        driverId: "Logan Sargeant",
         teamId: "williams",
         points: 0,
         time: "",
@@ -1564,7 +1563,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 11,
-        driverId: "zhou_guanyu",
+        driverId: "Zhou Guanyu",
         teamId: "sauber",
         points: 0,
         time: "",
@@ -1575,7 +1574,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 12,
-        driverId: "george_russell",
+        driverId: "George Russell",
         teamId: "mercedes",
         points: 0,
         time: "",
@@ -1586,7 +1585,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 13,
-        driverId: "alexander_albon",
+        driverId: "Alexander Albon",
         teamId: "williams",
         points: 0,
         time: "",
@@ -1597,7 +1596,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 14,
-        driverId: "valtteri_bottas",
+        driverId: "Valtteri Bottas",
         teamId: "sauber",
         points: 0,
         time: "",
@@ -1608,7 +1607,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 15,
-        driverId: "esteban_ocon",
+        driverId: "Esteban Ocon",
         teamId: "alpine",
         points: 0,
         time: "",
@@ -1619,7 +1618,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 16,
-        driverId: "lewis_hamilton",
+        driverId: "Lewis Hamilton",
         teamId: "mercedes",
         points: 0,
         time: "",
@@ -1630,7 +1629,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 17,
-        driverId: "fernando_alonso",
+        driverId: "Fernando Alonso",
         teamId: "aston_martin",
         points: 0,
         time: "",
@@ -1641,7 +1640,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 18,
-        driverId: "kevin_magnussen",
+        driverId: "Kevin Magnussen",
         teamId: "haas",
         points: 0,
         time: "",
@@ -1652,7 +1651,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 19,
-        driverId: "lance_stroll",
+        driverId: "Lance Stroll",
         teamId: "aston_martin",
         points: 0,
         time: "",
@@ -1664,7 +1663,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 20,
-        driverId: "lando_norris",
+        driverId: "Lando Norris",
         teamId: "mclaren",
         points: 0,
         time: "",
@@ -1695,7 +1694,7 @@ export const results: Record<string, Result> = {
     drivers: [
       {
         pos: 1,
-        driverId: "lando_norris",
+        driverId: "Lando Norris",
         teamId: "McLaren Mercedes",
         laps: 57,
         time: "1:30:49.876",
@@ -1706,7 +1705,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 2,
-        driverId: "max_verstappen",
+        driverId: "Max Verstappen",
         teamId: "Red Bull Racing Honda RBPT",
         laps: 57,
         time: "+7.612s",
@@ -1717,7 +1716,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 3,
-        driverId: "charles_leclerc",
+        driverId: "Charles Leclerc",
         teamId: "Ferrari",
         laps: 57,
         time: "+9.920s",
@@ -1728,7 +1727,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 4,
-        driverId: "sergio_perez",
+        driverId: "Sergio Perez",
         teamId: "Red Bull Racing Honda RBPT",
         laps: 57,
         time: "+14.650s",
@@ -1739,7 +1738,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 5,
-        driverId: "carlos_sainz",
+        driverId: "Carlos Sainz",
         teamId: "Ferrari",
         laps: 57,
         time: "+16.407s",
@@ -1750,7 +1749,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 6,
-        driverId: "lewis_hamilton",
+        driverId: "Lewis Hamilton",
         teamId: "Mercedes",
         laps: 57,
         time: "+16.585s",
@@ -1761,7 +1760,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 7,
-        driverId: "yuki_tsunoda",
+        driverId: "Yuki Tsunoda",
         teamId: "RB Honda RBPT",
         laps: 57,
         time: "+26.185s",
@@ -1772,7 +1771,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 8,
-        driverId: "george_russell",
+        driverId: "George Russell",
         teamId: "Mercedes",
         laps: 57,
         time: "+34.789s",
@@ -1783,7 +1782,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 9,
-        driverId: "fernando_alonso",
+        driverId: "Fernando Alonso",
         teamId: "Aston Martin Aramco Mercedes",
         laps: 57,
         time: "+37.107s",
@@ -1794,7 +1793,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 10,
-        driverId: "esteban_ocon",
+        driverId: "Esteban Ocon",
         teamId: "Alpine Renault",
         laps: 57,
         time: "+39.746s",
@@ -1805,7 +1804,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 11,
-        driverId: "nico_hulkenberg",
+        driverId: "Nico Hulkenburg",
         teamId: "Haas Ferrari",
         laps: 57,
         time: "+40.789s",
@@ -1816,7 +1815,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 12,
-        driverId: "pierre_gasly",
+        driverId: "Pierre Gasly",
         teamId: "Alpine Renault",
         laps: 57,
         time: "+44.958s",
@@ -1827,7 +1826,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 13,
-        driverId: "oscar_piastri",
+        driverId: "Oscar Piastri",
         teamId: "McLaren Mercedes",
         laps: 57,
         time: "+49.756s",
@@ -1838,7 +1837,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 14,
-        driverId: "zhou_guanyu",
+        driverId: "Zhou Guanyu",
         teamId: "Kick Sauber Ferrari",
         laps: 57,
         time: "+49.979s",
@@ -1849,7 +1848,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 15,
-        driverId: "daniel_ricciardo",
+        driverId: "Daniel Ricciardo",
         teamId: "RB Honda RBPT",
         laps: 57,
         time: "+50.956s",
@@ -1860,7 +1859,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 16,
-        driverId: "valtteri_bottas",
+        driverId: "Valtteri Bottas",
         teamId: "Kick Sauber Ferrari",
         laps: 57,
         time: "+52.356s",
@@ -1871,7 +1870,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 17,
-        driverId: "lance_stroll",
+        driverId: "Lance Stroll",
         teamId: "Aston Martin Aramco Mercedes",
         laps: 57,
         time: "+55.173s",
@@ -1882,7 +1881,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 18,
-        driverId: "alexander_albon",
+        driverId: "Alexander Albon",
         teamId: "Williams Mercedes",
         laps: 57,
         time: "+76.091s",
@@ -1893,7 +1892,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 19,
-        driverId: "kevin_magnussen",
+        driverId: "Kevin Magnussen",
         teamId: "Haas Ferrari",
         laps: 57,
         time: "+84.683s",
@@ -1904,7 +1903,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: "NC",
-        driverId: "logan_sargeant",
+        driverId: "Logan Sargeant",
         teamId: "Williams Mercedes",
         laps: 27,
         time: "DNF",
@@ -1934,7 +1933,7 @@ export const results: Record<string, Result> = {
     drivers: [
       {
         pos: 1,
-        driverId: "max_verstappen",
+        driverId: "Max Verstappen",
         teamId: "Red Bull Racing Honda RBPT",
         laps: 63,
         time: "1:25:25.252",
@@ -1945,7 +1944,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 2,
-        driverId: "lando_norris",
+        driverId: "Lando Norris",
         teamId: "McLaren Mercedes",
         laps: 63,
         time: "+0.725s",
@@ -1956,7 +1955,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 3,
-        driverId: "charles_leclerc",
+        driverId: "Charles Leclerc",
         teamId: "Ferrari",
         laps: 63,
         time: "+7.916s",
@@ -1967,7 +1966,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 4,
-        driverId: "oscar_piastri",
+        driverId: "Oscar Piastri",
         teamId: "McLaren Mercedes",
         laps: 63,
         time: "+14.132s",
@@ -1978,7 +1977,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 5,
-        driverId: "carlos_sainz",
+        driverId: "Carlos Sainz",
         teamId: "Ferrari",
         laps: 63,
         time: "+22.325s",
@@ -1989,7 +1988,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 6,
-        driverId: "lewis_hamilton",
+        driverId: "Lewis Hamilton",
         teamId: "Mercedes",
         laps: 63,
         time: "+35.104s",
@@ -2000,7 +1999,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 7,
-        driverId: "george_russell",
+        driverId: "George Russell",
         teamId: "Mercedes",
         laps: 63,
         time: "+47.154s",
@@ -2011,7 +2010,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 8,
-        driverId: "sergio_perez",
+        driverId: "Sergio Perez",
         teamId: "Red Bull Racing Honda RBPT",
         laps: 63,
         time: "+54.776s",
@@ -2022,7 +2021,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 9,
-        driverId: "lance_stroll",
+        driverId: "Lance Stroll",
         teamId: "Aston Martin Aramco Mercedes",
         laps: 63,
         time: "+79.556s",
@@ -2033,7 +2032,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 10,
-        driverId: "yuki_tsunoda",
+        driverId: "Yuki Tsunoda",
         teamId: "RB Honda RBPT",
         laps: 62,
         time: "+1 lap",
@@ -2044,7 +2043,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 11,
-        driverId: "nico_hulkenberg",
+        driverId: "Nico Hulkenburg",
         teamId: "Haas Ferrari",
         laps: 62,
         time: "+1 lap",
@@ -2055,7 +2054,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 12,
-        driverId: "kevin_magnussen",
+        driverId: "Kevin Magnussen",
         teamId: "Haas Ferrari",
         laps: 62,
         time: "+1 lap",
@@ -2066,7 +2065,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 13,
-        driverId: "daniel_ricciardo",
+        driverId: "Daniel Ricciardo",
         teamId: "RB Honda RBPT",
         laps: 62,
         time: "+1 lap",
@@ -2077,7 +2076,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 14,
-        driverId: "esteban_ocon",
+        driverId: "Esteban Ocon",
         teamId: "Alpine Renault",
         laps: 62,
         time: "+1 lap",
@@ -2088,7 +2087,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 15,
-        driverId: "zhou_guanyu",
+        driverId: "Zhou Guanyu",
         teamId: "Kick Sauber Ferrari",
         laps: 62,
         time: "+1 lap",
@@ -2099,7 +2098,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 16,
-        driverId: "pierre_gasly",
+        driverId: "Pierre Gasly",
         teamId: "Alpine Renault",
         laps: 62,
         time: "+1 lap",
@@ -2110,7 +2109,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 17,
-        driverId: "logan_sargeant",
+        driverId: "Logan Sargeant",
         teamId: "Williams Mercedes",
         laps: 62,
         time: "+1 lap",
@@ -2121,7 +2120,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 18,
-        driverId: "valtteri_bottas",
+        driverId: "Valtteri Bottas",
         teamId: "Kick Sauber Ferrari",
         laps: 62,
         time: "+1 lap",
@@ -2132,7 +2131,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 19,
-        driverId: "fernando_alonso",
+        driverId: "Fernando Alonso",
         teamId: "Aston Martin Aramco Mercedes",
         laps: 62,
         time: "+1 lap",
@@ -2143,7 +2142,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: "NC",
-        driverId: "alexander_albon",
+        driverId: "Alexander Albon",
         teamId: "Williams Mercedes",
         laps: 51,
         time: "DNF",
@@ -2173,7 +2172,7 @@ export const results: Record<string, Result> = {
     drivers: [
       {
         pos: 1,
-        driverId: "charles_leclerc",
+        driverId: "Charles Leclerc",
         teamId: "Ferrari",
         laps: 78,
         time: "2:23:15.554",
@@ -2184,7 +2183,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 2,
-        driverId: "oscar_piastri",
+        driverId: "Oscar Piastri",
         teamId: "McLaren Mercedes",
         laps: 78,
         time: "+7.152s",
@@ -2195,7 +2194,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 3,
-        driverId: "carlos_sainz",
+        driverId: "Carlos Sainz",
         teamId: "Ferrari",
         laps: 78,
         time: "+7.585s",
@@ -2206,7 +2205,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 4,
-        driverId: "lando_norris",
+        driverId: "Lando Norris",
         teamId: "McLaren Mercedes",
         laps: 78,
         time: "+8.650s",
@@ -2217,7 +2216,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 5,
-        driverId: "george_russell",
+        driverId: "George Russell",
         teamId: "Mercedes",
         laps: 78,
         time: "+13.309s",
@@ -2228,7 +2227,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 6,
-        driverId: "max_verstappen",
+        driverId: "Max Verstappen",
         teamId: "Red Bull Racing Honda RBPT",
         laps: 78,
         time: "+13.853s",
@@ -2239,7 +2238,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 7,
-        driverId: "lewis_hamilton",
+        driverId: "Lewis Hamilton",
         teamId: "Mercedes",
         laps: 78,
         time: "+14.908s",
@@ -2250,7 +2249,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 8,
-        driverId: "yuki_tsunoda",
+        driverId: "Yuki Tsunoda",
         teamId: "RB Honda RBPT",
         laps: 77,
         time: "+1 lap",
@@ -2261,7 +2260,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 9,
-        driverId: "alexander_albon",
+        driverId: "Alexander Albon",
         teamId: "Williams Mercedes",
         laps: 77,
         time: "+1 lap",
@@ -2272,7 +2271,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 10,
-        driverId: "pierre_gasly",
+        driverId: "Pierre Gasly",
         teamId: "Alpine Renault",
         laps: 77,
         time: "+1 lap",
@@ -2283,7 +2282,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 11,
-        driverId: "fernando_alonso",
+        driverId: "Fernando Alonso",
         teamId: "Aston Martin Aramco Mercedes",
         laps: 76,
         time: "+2 laps",
@@ -2294,7 +2293,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 12,
-        driverId: "daniel_ricciardo",
+        driverId: "Daniel Ricciardo",
         teamId: "RB Honda RBPT",
         laps: 76,
         time: "+2 laps",
@@ -2305,7 +2304,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 13,
-        driverId: "valtteri_bottas",
+        driverId: "Valtteri Bottas",
         teamId: "Kick Sauber Ferrari",
         laps: 76,
         time: "+2 laps",
@@ -2316,7 +2315,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 14,
-        driverId: "lance_stroll",
+        driverId: "Lance Stroll",
         teamId: "Aston Martin Aramco Mercedes",
         laps: 76,
         time: "+2 laps",
@@ -2327,7 +2326,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 15,
-        driverId: "logan_sargeant",
+        driverId: "Logan Sargeant",
         teamId: "Williams Mercedes",
         laps: 76,
         time: "+2 laps",
@@ -2338,7 +2337,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 16,
-        driverId: "zhou_guanyu",
+        driverId: "Zhou Guanyu",
         teamId: "Kick Sauber Ferrari",
         laps: 76,
         time: "+2 laps",
@@ -2349,7 +2348,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: "NC",
-        driverId: "sergio_perez",
+        driverId: "Sergio Perez",
         teamId: "Red Bull Racing Honda RBPT",
         laps: 0,
         time: "DNF",
@@ -2360,7 +2359,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: "NC",
-        driverId: "kevin_magnussen",
+        driverId: "Kevin Magnussen",
         teamId: "Haas Ferrari",
         laps: 0,
         time: "DNF",
@@ -2371,7 +2370,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: "NC",
-        driverId: "nico_hulkenberg",
+        driverId: "Nico Hulkenburg",
         teamId: "Haas Ferrari",
         laps: 0,
         time: "DNF",
@@ -2382,7 +2381,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: "NC",
-        driverId: "esteban_ocon",
+        driverId: "Esteban Ocon",
         teamId: "Alpine Renault",
         laps: 0,
         time: "DNF",
@@ -2412,7 +2411,7 @@ export const results: Record<string, Result> = {
     drivers: [
       {
         pos: 1,
-        driverId: "max_verstappen",
+        driverId: "Max Verstappen",
         teamId: "Red Bull Racing Honda RBPT",
         laps: 70,
         time: "1:45:47.927",
@@ -2423,7 +2422,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 2,
-        driverId: "lando_norris",
+        driverId: "Lando Norris",
         teamId: "McLaren Mercedes",
         laps: 70,
         time: "+3.879s",
@@ -2434,7 +2433,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 3,
-        driverId: "george_russell",
+        driverId: "George Russell",
         teamId: "Mercedes",
         laps: 70,
         time: "+4.317s",
@@ -2445,7 +2444,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 4,
-        driverId: "lewis_hamilton",
+        driverId: "Lewis Hamilton",
         teamId: "Mercedes",
         laps: 70,
         time: "+4.915s",
@@ -2456,7 +2455,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 5,
-        driverId: "oscar_piastri",
+        driverId: "Oscar Piastri",
         teamId: "McLaren Mercedes",
         laps: 70,
         time: "+10.199s",
@@ -2467,7 +2466,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 6,
-        driverId: "fernando_alonso",
+        driverId: "Fernando Alonso",
         teamId: "Aston Martin Aramco Mercedes",
         laps: 70,
         time: "+17.510s",
@@ -2478,7 +2477,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 7,
-        driverId: "lance_stroll",
+        driverId: "Lance Stroll",
         teamId: "Aston Martin Aramco Mercedes",
         laps: 70,
         time: "+23.625s",
@@ -2489,7 +2488,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 8,
-        driverId: "daniel_ricciardo",
+        driverId: "Daniel Ricciardo",
         teamId: "RB Honda RBPT",
         laps: 70,
         time: "+28.672s",
@@ -2500,7 +2499,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 9,
-        driverId: "pierre_gasly",
+        driverId: "Pierre Gasly",
         teamId: "Alpine Renault",
         laps: 70,
         time: "+30.021s",
@@ -2511,7 +2510,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 10,
-        driverId: "esteban_ocon",
+        driverId: "Esteban Ocon",
         teamId: "Alpine Renault",
         laps: 70,
         time: "+30.313s",
@@ -2522,7 +2521,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 11,
-        driverId: "nico_hulkenberg",
+        driverId: "Nico Hulkenburg",
         teamId: "Haas Ferrari",
         laps: 70,
         time: "+30.824s",
@@ -2533,7 +2532,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 12,
-        driverId: "kevin_magnussen",
+        driverId: "Kevin Magnussen",
         teamId: "Haas Ferrari",
         laps: 70,
         time: "+31.253s",
@@ -2544,7 +2543,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 13,
-        driverId: "valtteri_bottas",
+        driverId: "Valtteri Bottas",
         teamId: "Kick Sauber Ferrari",
         laps: 70,
         time: "+40.487s",
@@ -2555,7 +2554,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 14,
-        driverId: "yuki_tsunoda",
+        driverId: "Yuki Tsunoda",
         teamId: "RB Honda RBPT",
         laps: 70,
         time: "+52.694s",
@@ -2566,7 +2565,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 15,
-        driverId: "zhou_guanyu",
+        driverId: "Zhou Guanyu",
         teamId: "Kick Sauber Ferrari",
         laps: 69,
         time: "+1 lap",
@@ -2577,7 +2576,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: "NC",
-        driverId: "logan_sargeant",
+        driverId: "Logan Sargeant",
         teamId: "Williams Mercedes",
         laps: 23,
         time: "DNF",
@@ -2588,7 +2587,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: "NC",
-        driverId: "sergio_perez",
+        driverId: "Sergio Perez",
         teamId: "Red Bull Racing Honda RBPT",
         laps: 51,
         time: "DNF",
@@ -2599,7 +2598,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: "NC",
-        driverId: "charles_leclerc",
+        driverId: "Charles Leclerc",
         teamId: "Ferrari",
         laps: 40,
         time: "DNF",
@@ -2610,7 +2609,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: "NC",
-        driverId: "alexander_albon",
+        driverId: "Alexander Albon",
         teamId: "Williams Mercedes",
         laps: 52,
         time: "DNF",
@@ -2621,7 +2620,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: "NC",
-        driverId: "carlos_sainz",
+        driverId: "Carlos Sainz",
         teamId: "Ferrari",
         laps: 52,
         time: "DNF",
@@ -2651,7 +2650,7 @@ export const results: Record<string, Result> = {
     drivers: [
       {
         pos: 1,
-        driverId: "max_verstappen",
+        driverId: "Max Verstappen",
         teamId: "Red Bull Racing Honda RBPT",
         laps: 66,
         time: "1:28:20.227",
@@ -2662,7 +2661,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 2,
-        driverId: "lando_norris",
+        driverId: "Lando Norris",
         teamId: "McLaren Mercedes",
         laps: 66,
         time: "+2.219s",
@@ -2673,7 +2672,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 3,
-        driverId: "lewis_hamilton",
+        driverId: "Lewis Hamilton",
         teamId: "Mercedes",
         laps: 66,
         time: "+17.790s",
@@ -2684,7 +2683,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 4,
-        driverId: "george_russell",
+        driverId: "George Russell",
         teamId: "Mercedes",
         laps: 66,
         time: "+22.320s",
@@ -2695,7 +2694,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 5,
-        driverId: "charles_leclerc",
+        driverId: "Charles Leclerc",
         teamId: "Ferrari",
         laps: 66,
         time: "+22.709s",
@@ -2706,7 +2705,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 6,
-        driverId: "carlos_sainz",
+        driverId: "Carlos Sainz",
         teamId: "Ferrari",
         laps: 66,
         time: "+31.028s",
@@ -2717,7 +2716,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 7,
-        driverId: "oscar_piastri",
+        driverId: "Oscar Piastri",
         teamId: "McLaren Mercedes",
         laps: 66,
         time: "+33.760s",
@@ -2728,7 +2727,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 8,
-        driverId: "sergio_perez",
+        driverId: "Sergio Perez",
         teamId: "Red Bull Racing Honda RBPT",
         laps: 66,
         time: "+59.524s",
@@ -2739,7 +2738,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 9,
-        driverId: "pierre_gasly",
+        driverId: "Pierre Gasly",
         teamId: "Alpine Renault",
         laps: 66,
         time: "+62.025s",
@@ -2750,7 +2749,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 10,
-        driverId: "esteban_ocon",
+        driverId: "Esteban Ocon",
         teamId: "Alpine Renault",
         laps: 66,
         time: "+71.889s",
@@ -2761,7 +2760,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 11,
-        driverId: "nico_hulkenberg",
+        driverId: "Nico Hulkenburg",
         teamId: "Haas Ferrari",
         laps: 66,
         time: "+79.215s",
@@ -2772,7 +2771,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 12,
-        driverId: "fernando_alonso",
+        driverId: "Fernando Alonso",
         teamId: "Aston Martin Aramco Mercedes",
         laps: 65,
         time: "+1 lap",
@@ -2783,7 +2782,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 13,
-        driverId: "zhou_guanyu",
+        driverId: "Zhou Guanyu",
         teamId: "Kick Sauber Ferrari",
         laps: 65,
         time: "+1 lap",
@@ -2794,7 +2793,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 14,
-        driverId: "lance_stroll",
+        driverId: "Lance Stroll",
         teamId: "Aston Martin Aramco Mercedes",
         laps: 65,
         time: "+1 lap",
@@ -2805,7 +2804,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 15,
-        driverId: "daniel_ricciardo",
+        driverId: "Daniel Ricciardo",
         teamId: "RB Honda RBPT",
         laps: 65,
         time: "+1 lap",
@@ -2816,7 +2815,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 16,
-        driverId: "valtteri_bottas",
+        driverId: "Valtteri Bottas",
         teamId: "Kick Sauber Ferrari",
         laps: 65,
         time: "+1 lap",
@@ -2827,7 +2826,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 17,
-        driverId: "kevin_magnussen",
+        driverId: "Kevin Magnussen",
         teamId: "Haas Ferrari",
         laps: 65,
         time: "+1 lap",
@@ -2838,7 +2837,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 18,
-        driverId: "alexander_albon",
+        driverId: "Alexander Albon",
         teamId: "Williams Mercedes",
         laps: 65,
         time: "+1 lap",
@@ -2849,7 +2848,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 19,
-        driverId: "yuki_tsunoda",
+        driverId: "Yuki Tsunoda",
         teamId: "RB Honda RBPT",
         laps: 65,
         time: "+1 lap",
@@ -2860,7 +2859,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 20,
-        driverId: "logan_sargeant",
+        driverId: "Logan Sargeant",
         teamId: "Williams Mercedes",
         laps: 64,
         time: "+2 laps",
@@ -2890,7 +2889,7 @@ export const results: Record<string, Result> = {
     drivers: [
       {
         pos: 1,
-        driverId: "max_verstappen",
+        driverId: "Max Verstappen",
         teamId: "red_bull",
         points: 8,
         time: "",
@@ -2901,7 +2900,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 2,
-        driverId: "oscar_piastri",
+        driverId: "Oscar Piastri",
         teamId: "mclaren",
         points: 7,
         time: "",
@@ -2912,7 +2911,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 3,
-        driverId: "lando_norris",
+        driverId: "Lando Norris",
         teamId: "mclaren",
         points: 6,
         time: "",
@@ -2923,7 +2922,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 4,
-        driverId: "george_russell",
+        driverId: "George Russell",
         teamId: "mercedes",
         points: 5,
         time: "",
@@ -2934,7 +2933,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 5,
-        driverId: "carlos_sainz",
+        driverId: "Carlos Sainz",
         teamId: "ferrari",
         points: 4,
         time: "",
@@ -2945,7 +2944,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 6,
-        driverId: "lewis_hamilton",
+        driverId: "Lewis Hamilton",
         teamId: "mercedes",
         points: 3,
         time: "",
@@ -2956,7 +2955,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 7,
-        driverId: "charles_leclerc",
+        driverId: "Charles Leclerc",
         teamId: "ferrari",
         points: 2,
         time: "",
@@ -2967,7 +2966,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 8,
-        driverId: "sergio_perez",
+        driverId: "Sergio Perez",
         teamId: "red_bull",
         points: 1,
         time: "",
@@ -2978,7 +2977,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 9,
-        driverId: "kevin_magnussen",
+        driverId: "Kevin Magnussen",
         teamId: "haas",
         points: 0,
         time: "",
@@ -2989,7 +2988,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 10,
-        driverId: "lance_stroll",
+        driverId: "Lance Stroll",
         teamId: "aston_martin",
         points: 0,
         time: "",
@@ -3000,7 +2999,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 11,
-        driverId: "esteban_ocon",
+        driverId: "Esteban Ocon",
         teamId: "alpine",
         points: 0,
         time: "",
@@ -3011,7 +3010,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 12,
-        driverId: "pierre_gasly",
+        driverId: "Pierre Gasly",
         teamId: "alpine",
         points: 0,
         time: "",
@@ -3022,7 +3021,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 13,
-        driverId: "yuki_tsunoda",
+        driverId: "Yuki Tsunoda",
         teamId: "rb",
         points: 0,
         time: "",
@@ -3033,7 +3032,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 14,
-        driverId: "daniel_ricciardo",
+        driverId: "Daniel Ricciardo",
         teamId: "rb",
         points: 0,
         time: "",
@@ -3044,7 +3043,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 15,
-        driverId: "fernando_alonso",
+        driverId: "Fernando Alonso",
         teamId: "aston_martin",
         points: 0,
         time: "",
@@ -3055,7 +3054,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 16,
-        driverId: "logan_sargeant",
+        driverId: "Logan Sargeant",
         teamId: "williams",
         points: 0,
         time: "",
@@ -3066,7 +3065,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 17,
-        driverId: "alexander_albon",
+        driverId: "Alexander Albon",
         teamId: "williams",
         points: 0,
         time: "",
@@ -3077,7 +3076,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 18,
-        driverId: "valtteri_bottas",
+        driverId: "Valtteri Bottas",
         teamId: "sauber",
         points: 0,
         time: "",
@@ -3088,7 +3087,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 19,
-        driverId: "nico_hulkenberg",
+        driverId: "Nico Hulkenburg",
         teamId: "haas",
         points: 0,
         time: "",
@@ -3099,7 +3098,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 20,
-        driverId: "zhou_guanyu",
+        driverId: "Zhou Guanyu",
         teamId: "sauber",
         points: 0,
         time: "",
@@ -3129,7 +3128,7 @@ export const results: Record<string, Result> = {
     drivers: [
       {
         pos: 1,
-        driverId: "george_russell",
+        driverId: "George Russell",
         teamId: "Mercedes",
         laps: 71,
         time: "1:24:22.798",
@@ -3140,7 +3139,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 2,
-        driverId: "oscar_piastri",
+        driverId: "Oscar Piastri",
         teamId: "McLaren Mercedes",
         laps: 71,
         time: "+1.906s",
@@ -3151,7 +3150,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 3,
-        driverId: "carlos_sainz",
+        driverId: "Carlos Sainz",
         teamId: "Ferrari",
         laps: 71,
         time: "+4.533s",
@@ -3162,7 +3161,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 4,
-        driverId: "lewis_hamilton",
+        driverId: "Lewis Hamilton",
         teamId: "Mercedes",
         laps: 71,
         time: "+23.142s",
@@ -3173,7 +3172,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 5,
-        driverId: "max_verstappen",
+        driverId: "Max Verstappen",
         teamId: "Red Bull Racing Honda RBPT",
         laps: 71,
         time: "+37.253s",
@@ -3184,7 +3183,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 6,
-        driverId: "nico_hulkenberg",
+        driverId: "Nico Hulkenburg",
         teamId: "Haas Ferrari",
         laps: 71,
         time: "+54.088s",
@@ -3195,7 +3194,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 7,
-        driverId: "sergio_perez",
+        driverId: "Sergio Perez",
         teamId: "Red Bull Racing Honda RBPT",
         laps: 71,
         time: "+54.672s",
@@ -3206,7 +3205,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 8,
-        driverId: "kevin_magnussen",
+        driverId: "Kevin Magnussen",
         teamId: "Haas Ferrari",
         laps: 71,
         time: "+60.355s",
@@ -3217,7 +3216,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 9,
-        driverId: "daniel_ricciardo",
+        driverId: "Daniel Ricciardo",
         teamId: "RB Honda RBPT",
         laps: 71,
         time: "+61.169s",
@@ -3228,7 +3227,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 10,
-        driverId: "pierre_gasly",
+        driverId: "Pierre Gasly",
         teamId: "Alpine Renault",
         laps: 71,
         time: "+61.766s",
@@ -3239,7 +3238,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 11,
-        driverId: "charles_leclerc",
+        driverId: "Charles Leclerc",
         teamId: "Ferrari",
         laps: 71,
         time: "+67.056s",
@@ -3250,7 +3249,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 12,
-        driverId: "esteban_ocon",
+        driverId: "Esteban Ocon",
         teamId: "Alpine Renault",
         laps: 71,
         time: "+68.325s",
@@ -3261,7 +3260,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 13,
-        driverId: "lance_stroll",
+        driverId: "Lance Stroll",
         teamId: "Aston Martin Aramco Mercedes",
         laps: 70,
         time: "+1 lap",
@@ -3272,7 +3271,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 14,
-        driverId: "yuki_tsunoda",
+        driverId: "Yuki Tsunoda",
         teamId: "RB Honda RBPT",
         laps: 70,
         time: "+1 lap",
@@ -3283,7 +3282,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 15,
-        driverId: "alexander_albon",
+        driverId: "Alexander Albon",
         teamId: "Williams Mercedes",
         laps: 70,
         time: "+1 lap",
@@ -3294,7 +3293,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 16,
-        driverId: "valtteri_bottas",
+        driverId: "Valtteri Bottas",
         teamId: "Kick Sauber Ferrari",
         laps: 70,
         time: "+1 lap",
@@ -3305,7 +3304,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 17,
-        driverId: "zhou_guanyu",
+        driverId: "Zhou Guanyu",
         teamId: "Kick Sauber Ferrari",
         laps: 70,
         time: "+1 lap",
@@ -3316,7 +3315,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 18,
-        driverId: "fernando_alonso",
+        driverId: "Fernando Alonso",
         teamId: "Aston Martin Aramco Mercedes",
         laps: 70,
         time: "+1 lap",
@@ -3327,7 +3326,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 19,
-        driverId: "logan_sargeant",
+        driverId: "Logan Sargeant",
         teamId: "Williams Mercedes",
         laps: 69,
         time: "+2 laps",
@@ -3338,7 +3337,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 20,
-        driverId: "lando_norris",
+        driverId: "Lando Norris",
         teamId: "McLaren Mercedes",
         laps: 64,
         time: "+7 laps",
@@ -3368,7 +3367,7 @@ export const results: Record<string, Result> = {
     drivers: [
       {
         pos: 1,
-        driverId: "lewis_hamilton",
+        driverId: "Lewis Hamilton",
         teamId: "Mercedes",
         laps: 52,
         time: "1:22:27.059",
@@ -3379,7 +3378,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 2,
-        driverId: "max_verstappen",
+        driverId: "Max Verstappen",
         teamId: "Red Bull Racing Honda RBPT",
         laps: 52,
         time: "+1.465s",
@@ -3390,7 +3389,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 3,
-        driverId: "lando_norris",
+        driverId: "Lando Norris",
         teamId: "McLaren Mercedes",
         laps: 52,
         time: "+7.547s",
@@ -3401,7 +3400,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 4,
-        driverId: "oscar_piastri",
+        driverId: "Oscar Piastri",
         teamId: "McLaren Mercedes",
         laps: 52,
         time: "+12.429s",
@@ -3412,7 +3411,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 5,
-        driverId: "carlos_sainz",
+        driverId: "Carlos Sainz",
         teamId: "Ferrari",
         laps: 52,
         time: "+47.318s",
@@ -3423,7 +3422,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 6,
-        driverId: "nico_hulkenberg",
+        driverId: "Nico Hulkenburg",
         teamId: "Haas Ferrari",
         laps: 52,
         time: "+55.722s",
@@ -3434,7 +3433,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 7,
-        driverId: "lance_stroll",
+        driverId: "Lance Stroll",
         teamId: "Aston Martin Aramco Mercedes",
         laps: 52,
         time: "+56.569s",
@@ -3445,7 +3444,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 8,
-        driverId: "fernando_alonso",
+        driverId: "Fernando Alonso",
         teamId: "Aston Martin Aramco Mercedes",
         laps: 52,
         time: "+63.577s",
@@ -3456,7 +3455,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 9,
-        driverId: "alexander_albon",
+        driverId: "Alexander Albon",
         teamId: "Williams Mercedes",
         laps: 52,
         time: "+68.387s",
@@ -3467,7 +3466,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 10,
-        driverId: "yuki_tsunoda",
+        driverId: "Yuki Tsunoda",
         teamId: "RB Honda RBPT",
         laps: 52,
         time: "+79.303s",
@@ -3478,7 +3477,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 11,
-        driverId: "logan_sargeant",
+        driverId: "Logan Sargeant",
         teamId: "Williams Mercedes",
         laps: 52,
         time: "+88.960s",
@@ -3489,7 +3488,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 12,
-        driverId: "kevin_magnussen",
+        driverId: "Kevin Magnussen",
         teamId: "Haas Ferrari",
         laps: 52,
         time: "+90.153s",
@@ -3500,7 +3499,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 13,
-        driverId: "daniel_ricciardo",
+        driverId: "Daniel Ricciardo",
         teamId: "RB Honda RBPT",
         laps: 51,
         time: "+1 lap",
@@ -3511,7 +3510,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 14,
-        driverId: "charles_leclerc",
+        driverId: "Charles Leclerc",
         teamId: "Ferrari",
         laps: 51,
         time: "+1 lap",
@@ -3522,7 +3521,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 15,
-        driverId: "valtteri_bottas",
+        driverId: "Valtteri Bottas",
         teamId: "Kick Sauber Ferrari",
         laps: 51,
         time: "+1 lap",
@@ -3533,7 +3532,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 16,
-        driverId: "esteban_ocon",
+        driverId: "Esteban Ocon",
         teamId: "Alpine Renault",
         laps: 50,
         time: "+2 laps",
@@ -3544,7 +3543,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 17,
-        driverId: "sergio_perez",
+        driverId: "Sergio Perez",
         teamId: "Red Bull Racing Honda RBPT",
         laps: 50,
         time: "+2 laps",
@@ -3555,7 +3554,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 18,
-        driverId: "zhou_guanyu",
+        driverId: "Zhou Guanyu",
         teamId: "Kick Sauber Ferrari",
         laps: 50,
         time: "+2 laps",
@@ -3566,7 +3565,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: "NC",
-        driverId: "pierre_gasly",
+        driverId: "Pierre Gasly",
         teamId: "Alpine Renault",
         laps: 0,
         time: "DNS",
@@ -3577,7 +3576,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: "NC",
-        driverId: "george_russell",
+        driverId: "George Russell",
         teamId: "Mercedes",
         laps: 33,
         time: "DNF",
@@ -3607,7 +3606,7 @@ export const results: Record<string, Result> = {
     drivers: [
       {
         pos: 1,
-        driverId: "oscar_piastri",
+        driverId: "Oscar Piastri",
         teamId: "McLaren Mercedes",
         laps: 70,
         time: "1:38:01.989",
@@ -3618,7 +3617,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 2,
-        driverId: "lando_norris",
+        driverId: "Lando Norris",
         teamId: "McLaren Mercedes",
         laps: 70,
         time: "+2.141s",
@@ -3629,7 +3628,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 3,
-        driverId: "lewis_hamilton",
+        driverId: "Lewis Hamilton",
         teamId: "Mercedes",
         laps: 70,
         time: "+14.880s",
@@ -3640,7 +3639,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 4,
-        driverId: "charles_leclerc",
+        driverId: "Charles Leclerc",
         teamId: "Ferrari",
         laps: 70,
         time: "+19.686s",
@@ -3651,7 +3650,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 5,
-        driverId: "max_verstappen",
+        driverId: "Max Verstappen",
         teamId: "Red Bull Racing Honda RBPT",
         laps: 70,
         time: "+21.349s",
@@ -3662,7 +3661,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 6,
-        driverId: "carlos_sainz",
+        driverId: "Carlos Sainz",
         teamId: "Ferrari",
         laps: 70,
         time: "+23.073s",
@@ -3673,7 +3672,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 7,
-        driverId: "sergio_perez",
+        driverId: "Sergio Perez",
         teamId: "Red Bull Racing Honda RBPT",
         laps: 70,
         time: "+39.792s",
@@ -3684,7 +3683,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 8,
-        driverId: "george_russell",
+        driverId: "George Russell",
         teamId: "Mercedes",
         laps: 70,
         time: "+42.368s",
@@ -3695,7 +3694,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 9,
-        driverId: "yuki_tsunoda",
+        driverId: "Yuki Tsunoda",
         teamId: "RB Honda RBPT",
         laps: 70,
         time: "+77.259s",
@@ -3706,7 +3705,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 10,
-        driverId: "lance_stroll",
+        driverId: "Lance Stroll",
         teamId: "Aston Martin Aramco Mercedes",
         laps: 70,
         time: "+77.976s",
@@ -3717,7 +3716,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 11,
-        driverId: "fernando_alonso",
+        driverId: "Fernando Alonso",
         teamId: "Aston Martin Aramco Mercedes",
         laps: 70,
         time: "+82.460s",
@@ -3728,7 +3727,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 12,
-        driverId: "daniel_ricciardo",
+        driverId: "Daniel Ricciardo",
         teamId: "RB Honda RBPT",
         laps: 69,
         time: "+1 lap",
@@ -3739,7 +3738,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 13,
-        driverId: "nico_hulkenberg",
+        driverId: "Nico Hulkenburg",
         teamId: "Haas Ferrari",
         laps: 69,
         time: "+1 lap",
@@ -3750,7 +3749,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 14,
-        driverId: "alexander_albon",
+        driverId: "Alexander Albon",
         teamId: "Williams Mercedes",
         laps: 69,
         time: "+1 lap",
@@ -3761,7 +3760,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 15,
-        driverId: "kevin_magnussen",
+        driverId: "Kevin Magnussen",
         teamId: "Haas Ferrari",
         laps: 69,
         time: "+1 lap",
@@ -3772,7 +3771,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 16,
-        driverId: "valtteri_bottas",
+        driverId: "Valtteri Bottas",
         teamId: "Kick Sauber Ferrari",
         laps: 69,
         time: "+1 lap",
@@ -3783,7 +3782,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 17,
-        driverId: "logan_sargeant",
+        driverId: "Logan Sargeant",
         teamId: "Williams Mercedes",
         laps: 69,
         time: "+1 lap",
@@ -3794,7 +3793,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 18,
-        driverId: "esteban_ocon",
+        driverId: "Esteban Ocon",
         teamId: "Alpine Renault",
         laps: 69,
         time: "+1 lap",
@@ -3805,7 +3804,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 19,
-        driverId: "zhou_guanyu",
+        driverId: "Zhou Guanyu",
         teamId: "Kick Sauber Ferrari",
         laps: 69,
         time: "+1 lap",
@@ -3816,7 +3815,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: "NC",
-        driverId: "pierre_gasly",
+        driverId: "Pierre Gasly",
         teamId: "Alpine Renault",
         laps: 33,
         time: "DNF",
@@ -3846,7 +3845,7 @@ export const results: Record<string, Result> = {
     drivers: [
       {
         pos: 1,
-        driverId: "lewis_hamilton",
+        driverId: "Lewis Hamilton",
         teamId: "Mercedes",
         laps: 44,
         time: "+0.526s",
@@ -3857,7 +3856,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 2,
-        driverId: "oscar_piastri",
+        driverId: "Oscar Piastri",
         teamId: "McLaren Mercedes",
         laps: 44,
         time: "+1.173s",
@@ -3868,7 +3867,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 3,
-        driverId: "charles_leclerc",
+        driverId: "Charles Leclerc",
         teamId: "Ferrari",
         laps: 44,
         time: "+8.549s",
@@ -3879,7 +3878,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 4,
-        driverId: "max_verstappen",
+        driverId: "Max Verstappen",
         teamId: "Red Bull Racing Honda RBPT",
         laps: 44,
         time: "+9.226s",
@@ -3890,7 +3889,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 5,
-        driverId: "lando_norris",
+        driverId: "Lando Norris",
         teamId: "McLaren Mercedes",
         laps: 44,
         time: "+9.850s",
@@ -3901,7 +3900,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 6,
-        driverId: "carlos_sainz",
+        driverId: "Carlos Sainz",
         teamId: "Ferrari",
         laps: 44,
         time: "+19.795s",
@@ -3912,7 +3911,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 7,
-        driverId: "sergio_perez",
+        driverId: "Sergio Perez",
         teamId: "Red Bull Racing Honda RBPT",
         laps: 44,
         time: "+43.195s",
@@ -3923,7 +3922,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 8,
-        driverId: "fernando_alonso",
+        driverId: "Fernando Alonso",
         teamId: "Aston Martin Aramco Mercedes",
         laps: 44,
         time: "+49.963s",
@@ -3934,7 +3933,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 9,
-        driverId: "esteban_ocon",
+        driverId: "Esteban Ocon",
         teamId: "Alpine Renault",
         laps: 44,
         time: "+52.552s",
@@ -3945,7 +3944,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 10,
-        driverId: "daniel_ricciardo",
+        driverId: "Daniel Ricciardo",
         teamId: "RB Honda RBPT",
         laps: 44,
         time: "+54.926s",
@@ -3956,7 +3955,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 11,
-        driverId: "lance_stroll",
+        driverId: "Lance Stroll",
         teamId: "Aston Martin Aramco Mercedes",
         laps: 44,
         time: "+63.011s",
@@ -3967,7 +3966,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 12,
-        driverId: "alexander_albon",
+        driverId: "Alexander Albon",
         teamId: "Williams Mercedes",
         laps: 44,
         time: "+63.651s",
@@ -3978,7 +3977,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 13,
-        driverId: "pierre_gasly",
+        driverId: "Pierre Gasly",
         teamId: "Alpine Renault",
         laps: 44,
         time: "+64.365s",
@@ -3989,7 +3988,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 14,
-        driverId: "kevin_magnussen",
+        driverId: "Kevin Magnussen",
         teamId: "Haas Ferrari",
         laps: 44,
         time: "+66.631s",
@@ -4000,7 +3999,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 15,
-        driverId: "valtteri_bottas",
+        driverId: "Valtteri Bottas",
         teamId: "Kick Sauber Ferrari",
         laps: 44,
         time: "+70.638s",
@@ -4011,7 +4010,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 16,
-        driverId: "yuki_tsunoda",
+        driverId: "Yuki Tsunoda",
         teamId: "RB Honda RBPT",
         laps: 44,
         time: "+76.737s",
@@ -4022,7 +4021,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 17,
-        driverId: "logan_sargeant",
+        driverId: "Logan Sargeant",
         teamId: "Williams Mercedes",
         laps: 44,
         time: "+86.057s",
@@ -4033,7 +4032,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 18,
-        driverId: "nico_hulkenberg",
+        driverId: "Nico Hulkenburg",
         teamId: "Haas Ferrari",
         laps: 44,
         time: "+88.833s",
@@ -4044,7 +4043,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: "NC",
-        driverId: "zhou_guanyu",
+        driverId: "Zhou Guanyu",
         teamId: "Kick Sauber Ferrari",
         laps: 5,
         time: "DNF",
@@ -4055,7 +4054,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: "DQ",
-        driverId: "george_russell",
+        driverId: "George Russell",
         teamId: "Mercedes",
         laps: 44,
         time: "1:19:57.040",
@@ -4085,7 +4084,7 @@ export const results: Record<string, Result> = {
     drivers: [
       {
         pos: 1,
-        driverId: "lando_norris",
+        driverId: "Lando Norris",
         teamId: "McLaren Mercedes",
         laps: 72,
         time: "1:30:45.519",
@@ -4096,7 +4095,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 2,
-        driverId: "max_verstappen",
+        driverId: "Max Verstappen",
         teamId: "Red Bull Racing Honda RBPT",
         laps: 72,
         time: "+22.896s",
@@ -4107,7 +4106,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 3,
-        driverId: "charles_leclerc",
+        driverId: "Charles Leclerc",
         teamId: "Ferrari",
         laps: 72,
         time: "+25.439s",
@@ -4118,7 +4117,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 4,
-        driverId: "oscar_piastri",
+        driverId: "Oscar Piastri",
         teamId: "McLaren Mercedes",
         laps: 72,
         time: "+27.337s",
@@ -4129,7 +4128,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 5,
-        driverId: "carlos_sainz",
+        driverId: "Carlos Sainz",
         teamId: "Ferrari",
         laps: 72,
         time: "+32.137s",
@@ -4140,7 +4139,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 6,
-        driverId: "sergio_perez",
+        driverId: "Sergio Perez",
         teamId: "Red Bull Racing Honda RBPT",
         laps: 72,
         time: "+39.542s",
@@ -4151,7 +4150,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 7,
-        driverId: "george_russell",
+        driverId: "George Russell",
         teamId: "Mercedes",
         laps: 72,
         time: "+44.617s",
@@ -4162,7 +4161,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 8,
-        driverId: "lewis_hamilton",
+        driverId: "Lewis Hamilton",
         teamId: "Mercedes",
         laps: 72,
         time: "+49.599s",
@@ -4173,7 +4172,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 9,
-        driverId: "pierre_gasly",
+        driverId: "Pierre Gasly",
         teamId: "Alpine Renault",
         laps: 71,
         time: "+1 lap",
@@ -4184,7 +4183,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 10,
-        driverId: "fernando_alonso",
+        driverId: "Fernando Alonso",
         teamId: "Aston Martin Aramco Mercedes",
         laps: 71,
         time: "+1 lap",
@@ -4195,7 +4194,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 11,
-        driverId: "nico_hulkenberg",
+        driverId: "Nico Hulkenburg",
         teamId: "Haas Ferrari",
         laps: 71,
         time: "+1 lap",
@@ -4206,7 +4205,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 12,
-        driverId: "daniel_ricciardo",
+        driverId: "Daniel Ricciardo",
         teamId: "RB Honda RBPT",
         laps: 71,
         time: "+1 lap",
@@ -4217,7 +4216,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 13,
-        driverId: "lance_stroll",
+        driverId: "Lance Stroll",
         teamId: "Aston Martin Aramco Mercedes",
         laps: 71,
         time: "+1 lap",
@@ -4228,7 +4227,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 14,
-        driverId: "alexander_albon",
+        driverId: "Alexander Albon",
         teamId: "Williams Mercedes",
         laps: 71,
         time: "+1 lap",
@@ -4239,7 +4238,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 15,
-        driverId: "esteban_ocon",
+        driverId: "Esteban Ocon",
         teamId: "Alpine Renault",
         laps: 71,
         time: "+1 lap",
@@ -4250,7 +4249,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 16,
-        driverId: "logan_sargeant",
+        driverId: "Logan Sargeant",
         teamId: "Williams Mercedes",
         laps: 71,
         time: "+1 lap",
@@ -4261,7 +4260,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 17,
-        driverId: "yuki_tsunoda",
+        driverId: "Yuki Tsunoda",
         teamId: "RB Honda RBPT",
         laps: 71,
         time: "+1 lap",
@@ -4272,7 +4271,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 18,
-        driverId: "kevin_magnussen",
+        driverId: "Kevin Magnussen",
         teamId: "Haas Ferrari",
         laps: 71,
         time: "+1 lap",
@@ -4283,7 +4282,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 19,
-        driverId: "valtteri_bottas",
+        driverId: "Valtteri Bottas",
         teamId: "Kick Sauber Ferrari",
         laps: 70,
         time: "+2 laps",
@@ -4294,7 +4293,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 20,
-        driverId: "zhou_guanyu",
+        driverId: "Zhou Guanyu",
         teamId: "Kick Sauber Ferrari",
         laps: 70,
         time: "+2 laps",
@@ -4324,7 +4323,7 @@ export const results: Record<string, Result> = {
     drivers: [
       {
         pos: 1,
-        driverId: "charles_leclerc",
+        driverId: "Charles Leclerc",
         teamId: "Ferrari",
         laps: 53,
         time: "1:14:40.727",
@@ -4335,7 +4334,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 2,
-        driverId: "oscar_piastri",
+        driverId: "Oscar Piastri",
         teamId: "McLaren Mercedes",
         laps: 53,
         time: "+2.664s",
@@ -4346,7 +4345,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 3,
-        driverId: "lando_norris",
+        driverId: "Lando Norris",
         teamId: "McLaren Mercedes",
         laps: 53,
         time: "+6.153s",
@@ -4357,7 +4356,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 4,
-        driverId: "carlos_sainz",
+        driverId: "Carlos Sainz",
         teamId: "Ferrari",
         laps: 53,
         time: "+15.621s",
@@ -4368,7 +4367,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 5,
-        driverId: "lewis_hamilton",
+        driverId: "Lewis Hamilton",
         teamId: "Mercedes",
         laps: 53,
         time: "+22.820s",
@@ -4379,7 +4378,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 6,
-        driverId: "max_verstappen",
+        driverId: "Max Verstappen",
         teamId: "Red Bull Racing Honda RBPT",
         laps: 53,
         time: "+37.932s",
@@ -4390,7 +4389,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 7,
-        driverId: "george_russell",
+        driverId: "George Russell",
         teamId: "Mercedes",
         laps: 53,
         time: "+39.715s",
@@ -4401,7 +4400,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 8,
-        driverId: "sergio_perez",
+        driverId: "Sergio Perez",
         teamId: "Red Bull Racing Honda RBPT",
         laps: 53,
         time: "+54.148s",
@@ -4412,7 +4411,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 9,
-        driverId: "alexander_albon",
+        driverId: "Alexander Albon",
         teamId: "Williams Mercedes",
         laps: 53,
         time: "+67.456s",
@@ -4423,7 +4422,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 10,
-        driverId: "kevin_magnussen",
+        driverId: "Kevin Magnussen",
         teamId: "Haas Ferrari",
         laps: 53,
         time: "+68.302s",
@@ -4434,7 +4433,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 11,
-        driverId: "fernando_alonso",
+        driverId: "Fernando Alonso",
         teamId: "Aston Martin Aramco Mercedes",
         laps: 53,
         time: "+68.495s",
@@ -4445,7 +4444,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 12,
-        driverId: "franco_colapinto",
+        driverId: "Franco Colapinto",
         teamId: "Williams Mercedes",
         laps: 53,
         time: "+81.308s",
@@ -4456,7 +4455,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 13,
-        driverId: "daniel_ricciardo",
+        driverId: "Daniel Ricciardo",
         teamId: "RB Honda RBPT",
         laps: 53,
         time: "+93.452s",
@@ -4467,7 +4466,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 14,
-        driverId: "esteban_ocon",
+        driverId: "Esteban Ocon",
         teamId: "Alpine Renault",
         laps: 52,
         time: "+1 lap",
@@ -4478,7 +4477,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 15,
-        driverId: "pierre_gasly",
+        driverId: "Pierre Gasly",
         teamId: "Alpine Renault",
         laps: 52,
         time: "+1 lap",
@@ -4489,7 +4488,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 16,
-        driverId: "valtteri_bottas",
+        driverId: "Valtteri Bottas",
         teamId: "Kick Sauber Ferrari",
         laps: 52,
         time: "+1 lap",
@@ -4500,7 +4499,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 17,
-        driverId: "nico_hulkenberg",
+        driverId: "Nico Hulkenburg",
         teamId: "Haas Ferrari",
         laps: 52,
         time: "+1 lap",
@@ -4511,7 +4510,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 18,
-        driverId: "zhou_guanyu",
+        driverId: "Zhou Guanyu",
         teamId: "Kick Sauber Ferrari",
         laps: 52,
         time: "+1 lap",
@@ -4522,7 +4521,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 19,
-        driverId: "lance_stroll",
+        driverId: "Lance Stroll",
         teamId: "Aston Martin Aramco Mercedes",
         laps: 52,
         time: "+1 lap",
@@ -4533,7 +4532,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: "NC",
-        driverId: "yuki_tsunoda",
+        driverId: "Yuki Tsunoda",
         teamId: "RB Honda RBPT",
         laps: 7,
         time: "DNF",
@@ -4563,7 +4562,7 @@ export const results: Record<string, Result> = {
     drivers: [
       {
         pos: 1,
-        driverId: "oscar_piastri",
+        driverId: "Oscar Piastri",
         teamId: "McLaren Mercedes",
         laps: 51,
         time: "1:32:58.007",
@@ -4574,7 +4573,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 2,
-        driverId: "charles_leclerc",
+        driverId: "Charles Leclerc",
         teamId: "Ferrari",
         laps: 51,
         time: "+10.910s",
@@ -4585,7 +4584,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 3,
-        driverId: "george_russell",
+        driverId: "George Russell",
         teamId: "Mercedes",
         laps: 51,
         time: "+31.328s",
@@ -4596,7 +4595,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 4,
-        driverId: "lando_norris",
+        driverId: "Lando Norris",
         teamId: "McLaren Mercedes",
         laps: 51,
         time: "+36.143s",
@@ -4607,7 +4606,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 5,
-        driverId: "max_verstappen",
+        driverId: "Max Verstappen",
         teamId: "Red Bull Racing Honda RBPT",
         laps: 51,
         time: "+77.098s",
@@ -4618,7 +4617,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 6,
-        driverId: "fernando_alonso",
+        driverId: "Fernando Alonso",
         teamId: "Aston Martin Aramco Mercedes",
         laps: 51,
         time: "+85.468s",
@@ -4629,7 +4628,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 7,
-        driverId: "alexander_albon",
+        driverId: "Alexander Albon",
         teamId: "Williams Mercedes",
         laps: 51,
         time: "+87.396s",
@@ -4640,7 +4639,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 8,
-        driverId: "franco_colapinto",
+        driverId: "Franco Colapinto",
         teamId: "Williams Mercedes",
         laps: 51,
         time: "+89.541s",
@@ -4651,7 +4650,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 9,
-        driverId: "lewis_hamilton",
+        driverId: "Lewis Hamilton",
         teamId: "Mercedes",
         laps: 51,
         time: "+92.401s",
@@ -4662,7 +4661,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 10,
-        driverId: "oliver_bearman",
+        driverId: "Oliver Bearman",
         teamId: "Haas Ferrari",
         laps: 51,
         time: "+93.127s",
@@ -4673,7 +4672,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 11,
-        driverId: "nico_hulkenberg",
+        driverId: "Nico Hulkenburg",
         teamId: "Haas Ferrari",
         laps: 51,
         time: "+93.465s",
@@ -4684,7 +4683,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 12,
-        driverId: "pierre_gasly",
+        driverId: "Pierre Gasly",
         teamId: "Alpine Renault",
         laps: 51,
         time: "+117.189s",
@@ -4695,7 +4694,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 13,
-        driverId: "daniel_ricciardo",
+        driverId: "Daniel Ricciardo",
         teamId: "RB Honda RBPT",
         laps: 51,
         time: "+146.907s",
@@ -4706,7 +4705,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 14,
-        driverId: "zhou_guanyu",
+        driverId: "Zhou Guanyu",
         teamId: "Kick Sauber Ferrari",
         laps: 51,
         time: "+148.841s",
@@ -4717,7 +4716,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 15,
-        driverId: "esteban_ocon",
+        driverId: "Esteban Ocon",
         teamId: "Alpine Renault",
         laps: 50,
         time: "+1 lap",
@@ -4728,7 +4727,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 16,
-        driverId: "valtteri_bottas",
+        driverId: "Valtteri Bottas",
         teamId: "Kick Sauber Ferrari",
         laps: 50,
         time: "+1 lap",
@@ -4739,7 +4738,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 17,
-        driverId: "sergio_perez",
+        driverId: "Sergio Perez",
         teamId: "Red Bull Racing Honda RBPT",
         laps: 49,
         time: "DNF",
@@ -4750,7 +4749,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 18,
-        driverId: "carlos_sainz",
+        driverId: "Carlos Sainz",
         teamId: "Ferrari",
         laps: 49,
         time: "DNF",
@@ -4761,7 +4760,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: 19,
-        driverId: "lance_stroll",
+        driverId: "Lance Stroll",
         teamId: "Aston Martin Aramco Mercedes",
         laps: 45,
         time: "DNF",
@@ -4772,7 +4771,7 @@ export const results: Record<string, Result> = {
       },
       {
         pos: "NC",
-        driverId: "yuki_tsunoda",
+        driverId: "Yuki Tsunoda",
         teamId: "RB Honda RBPT",
         laps: 14,
         time: "DNF",
@@ -4824,9 +4823,9 @@ export function getDriverStandings(races: number) {
   const result: DriverResult[] = []
 
   data.forEach(([key, value], index) => {
-    const driverData = drivers.find(driver => driver.driverId === key)
+    //const driverData = drivers.find(driver => driver.driverId === key)
     result.push({
-      name: driverData!.name,
+      name: key,
       points: value!.points,
       pos: index + 1,
     })

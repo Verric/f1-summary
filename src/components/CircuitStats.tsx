@@ -1,7 +1,7 @@
 import { useContext } from "react"
-import { Circuit } from "../2024/data/circuits"
+import { Circuit } from "../data/circuits"
 import { UnitContext } from "./AppLayout"
-import { kmToMi } from "../utils/conversion_utils"
+import { kmToMi } from "../utils/conversionUtils"
 
 export default function CircuitStats({ circuit }: { circuit: Circuit }) {
   const isImperial = useContext(UnitContext)

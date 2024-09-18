@@ -1,13 +1,13 @@
-import RedBullCar from "../../assets/2024/cars/red-bull-car.avif"
-import Ferrari from "../../assets/2024/cars/ferrari-car.avif"
-import Mclaren from "../../assets/2024/cars/mclaren-car.avif"
-import Mercedes from "../../assets/2024/cars/mercedes-car.avif"
-import AstonMartin from "../../assets/2024/cars/aston-martin-car.avif"
-import Alpine from "../../assets/2024/cars/alpine-car.avif"
-import Hass from "../../assets/2024/cars/haas-car.avif"
-import Williams from "../../assets/2024/cars/williams-car.avif"
-import RB from "../../assets/2024/cars/rb-car.avif"
-import Sauber from "../../assets/2024/cars/kick-sauber-car.avif"
+import RedBullCar from "../assets/cars/red-bull-car.avif"
+import Ferrari from "../assets/cars/ferrari-car.avif"
+import Mclaren from "../assets/cars/mclaren-car.avif"
+import Mercedes from "../assets/cars/mercedes-car.avif"
+import AstonMartin from "../assets/cars/aston-martin-car.avif"
+import Alpine from "../assets/cars/alpine-car.avif"
+import Hass from "../assets/cars/haas-car.avif"
+import Williams from "../assets/cars/williams-car.avif"
+import RB from "../assets/cars/rb-car.avif"
+import Sauber from "../assets/cars/kick-sauber-car.avif"
 
 export const teams = [
   {

@@ -22,7 +22,7 @@ export default function AppNav() {
   return (
     <main className="h-screen w-screen p-4 grid grid-rows-[0.5fr,_1fr_10fr] ">
       <nav className="flex justify-between border-b ">
-        <Link to="/2024" className="text-2xl">
+        <Link to="/" className="text-2xl">
           F1 Summary 2024
         </Link>
         <section className="flex  ">

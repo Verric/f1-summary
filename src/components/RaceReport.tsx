@@ -1,10 +1,14 @@
-import { Result } from "./data/results"
-import { PositionChange } from "../components/PostionChange"
-import { Circuit } from "./data/circuits"
-import CircuitStats from "../components/CircuitStats"
+import { Result } from "../data/results"
+import { PositionChange } from "./PostionChange"
+import { Circuit } from "../data/circuits"
+import CircuitStats from "./CircuitStats"
 import { useContext } from "react"
-import { UnitContext } from "../components/AppLayout"
-import { kmToMi } from "../utils/conversion_utils"
+import { UnitContext } from "./AppLayout"
+import { kmToMi } from "../utils/conversionUtils"
+/*
+ * The useContext, causes a full component re-render, however the table is pretty static and is limited
+ * to 20 rows, so perf seems fine atm. Could probalby extract to  a "unitAware" component later
+ */
 
 export default function RaceReport({ results, circuit }: { results: Result; circuit: Circuit }) {
   const isImperial = useContext(UnitContext)
