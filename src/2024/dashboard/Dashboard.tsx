@@ -1,4 +1,4 @@
-import LeaderboardLayout from "./LeaderbaordLayout"
+import LeaderboardLayout from "./LeaderboardLayout"
 
 export default function Dashboard() {
   return (

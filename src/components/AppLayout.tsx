@@ -25,7 +25,7 @@ export default function AppNav() {
         <Link to="/2024" className="text-2xl">
           F1 Summary 2024
         </Link>
-        <section className="flex ">
+        <section className="flex  ">
           <div className="form-control">
             <label className="label cursor-pointer">
               <span className="label-text mr-2">Imperial Units</span>
