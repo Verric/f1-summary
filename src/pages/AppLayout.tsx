@@ -1,6 +1,6 @@
-import { Outlet, Link } from "react-router-dom"
-import Venues from "./Venues"
 import { createContext, useState } from "react"
+import { Outlet, Link } from "react-router-dom"
+import Venues from "../components/Venues"
 
 //apparently createContext takes a mandatory init value
 export const UnitContext = createContext<boolean>(false)
@@ -22,9 +22,14 @@ export default function AppNav() {
   return (
     <main className="h-screen w-screen p-4 grid grid-rows-[0.5fr,_1fr_10fr] ">
       <nav className="flex justify-between border-b ">
-        <Link to="/" className="text-2xl">
-          F1 Summary 2024
-        </Link>
+        <div>
+          <Link to="/" className="text-2xl">
+            F1 Summary 2024
+          </Link>
+          <Link to="/about" className="text-2xl ml-4 border-l-2 p-4">
+            About
+          </Link>
+        </div>
         <section className="flex  ">
           <div className="form-control">
             <label className="label cursor-pointer">

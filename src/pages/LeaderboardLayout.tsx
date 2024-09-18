@@ -1,6 +1,6 @@
 import { useState } from "react"
-import ConstructorLeaderboard from "./ConstructorLeaderboard"
-import DriverLeaderboard from "./DriverLeaderboard"
+import ConstructorLeaderboard from "../components/ConstructorLeaderboard"
+import DriverLeaderboard from "../components/DriverLeaderboard"
 
 export default function LeaderboardLayout() {
   const [race, setRace] = useState(1)

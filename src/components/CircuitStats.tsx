@@ -1,6 +1,6 @@
 import { useContext } from "react"
 import { Circuit } from "../data/circuits"
-import { UnitContext } from "./AppLayout"
+import { UnitContext } from "../pages/AppLayout"
 import { kmToMi } from "../utils/conversionUtils"
 
 export default function CircuitStats({ circuit }: { circuit: Circuit }) {
