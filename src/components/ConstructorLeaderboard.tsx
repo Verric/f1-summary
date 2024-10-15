@@ -1,7 +1,14 @@
-import { getConstructorsStandings } from "../data/results"
+import { useEffect, useState } from "react"
+import { type ConResult, getConstructorsStandings } from "../data/results"
 
 export default function ConstructorLeaderboard({ race }: { race: number }) {
-  const data = getConstructorsStandings(race)
+  const [data, setData] = useState<ConResult[]>([])
+
+  useEffect(() => {
+    const standings = getConstructorsStandings(race)
+    setData(standings)
+  }, [race])
+
   return (
     <main>
       <table className="table">

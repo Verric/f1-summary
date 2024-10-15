@@ -4851,13 +4851,6 @@ export function calculateConstructorsStandings(upToRace: number) {
 }
 
 export function getConstructorsStandings(races: number) {
-  interface ConResult {
-    team: string
-    points: number
-    carImage: string
-    chassis: string
-    pos: number
-  }
   const data = calculateConstructorsStandings(races)
   const result: ConResult[] = []
 
@@ -4872,4 +4865,12 @@ export function getConstructorsStandings(races: number) {
     })
   })
   return result
+}
+
+export interface ConResult {
+  team: string
+  points: number
+  carImage: string
+  chassis: string
+  pos: number
 }
