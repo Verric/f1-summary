@@ -19,11 +19,6 @@ Under the tools folder I have a hacky semi-automated script that given a base ur
 using cheerio. The data is then pasted into the "results.ts" under the data folder. Images and tyre info grahphics are currently,
 manually downloaded.
 
-## Thanks
-
-In a sort of weird negative thanks, to F1 for supplying the data in a longwinded way which motivated this project. Yet they actually have all the info I care about so that's nice. Also could the FIA or F1 create a simple JSON/XML/GQL API? It would be nice for accessing this type of basic info
-
-Also, weirdly despite Pirelli having a bit of a poor website. Their section on F1 info graphics found [here](https://www.pirelli.com/global/en-ww/emotions-and-numbers/) actually provides an incredibly nice view about the tyres and pit stops. So well done to who ever works on the info graphics, I think they are great
 
 ## Todo
 
