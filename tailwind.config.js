@@ -2,13 +2,19 @@
 import daisyui from "daisyui"
 import typography from "@tailwindcss/typography"
 export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
   daisyui: {
     themes: ["light", "dark"],
   },
   theme: {
     extend: {
       colors: {
+        background: "var(--background)",
+        foreground: "var(--foreground)",
         "red-bull": {
           DEFAULT: "rgb(54, 113, 198)",
         },
