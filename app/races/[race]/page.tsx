@@ -1,13 +1,13 @@
 import Image from "next/image"
-import { PositionChange } from "../components/PostionChange"
-import CircuitStats from "../components/CircuitStats"
-import { circuits } from "../data/circuits"
-import { results } from "../data/results"
+import { PositionChange } from "../../components/PostionChange"
+import CircuitStats from "../../components/CircuitStats"
+import { circuits } from "../../data/circuits"
+import { results } from "../../data/results"
 // import { useContext } from "react"
 // import { UnitContext } from "../pages/AppLayout"
 // import { kmToMi } from "../utils/conversionUtils"
 export async function generateStaticParams() {
-  return Object.keys(results)
+  return Object.keys(circuits).map(x => ({ race: x }))
 }
 
 export default function RaceReport({ params }: { params: { race: string } }) {
@@ -55,8 +55,8 @@ export default function RaceReport({ params }: { params: { race: string } }) {
         </div>
       </section>
       <section className=" grid grid-flow-row-dense">
-        <Image width={1000} className="h-auto" src={circuit.pitStopGuide} alt="pit stops" />
-        <Image priority width={1000} className="h-auto" src={circuit.tyreGuide} alt="tyre guides" />
+        <Image loading="eager" width={1000} className="h-auto" src={circuit.pitStopGuide} alt="pit stops" />
+        <Image loading="eager" priority width={1000} className="h-auto" src={circuit.tyreGuide} alt="tyre guides" />
       </section>
     </main>
   )

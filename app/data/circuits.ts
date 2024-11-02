@@ -33,6 +33,8 @@ import ItalianTyreGuide from "../assets/tyre_guides/italian_tyre_guide.avif"
 import ItalianPitStop from "../assets/pit-stops/italy_pit_stop.jpg"
 import AzerbaijanTyreGuide from "../assets/tyre_guides/azerbaijan_tyre_guide.avif"
 import AzerbaijanPitStop from "../assets/pit-stops/azerbaijan_pit_stop.jpg"
+import SingaporeTyreGuide from "../assets/tyre_guides/singapore_tyre_guide.avif"
+import SingaporePitStop from "../assets/pit-stops/singapore_pit_stop.jpg"
 
 export interface Circuit {
   name: string
@@ -198,5 +200,14 @@ export const circuits: Record<string, Circuit> = {
     raceDistance: 306.049,
     tyreGuide: AzerbaijanTyreGuide,
     pitStopGuide: AzerbaijanPitStop,
+  },
+  singapore: {
+    name: "Singapore Grand Prix",
+    location: "singapore",
+    laps: 62,
+    lapDistance: 4.94,
+    raceDistance: 306.143,
+    tyreGuide: SingaporeTyreGuide,
+    pitStopGuide: SingaporePitStop,
   },
 }

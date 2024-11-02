@@ -11,7 +11,7 @@ export default function Home() {
         <input
           type="range"
           min={1}
-          max={20}
+          max={21}
           value={race}
           onChange={e => setRace(Number(e.target.value))}
           className="range range-primary"
@@ -36,6 +36,7 @@ export default function Home() {
           <span>Belgium</span>
           <span>Netherlands</span>
           <span>Italy</span>
+          <span>Azerbaijan</span>
           <span>Azerbaijan</span>
         </div>
         <section className="grid grid-cols-2">
