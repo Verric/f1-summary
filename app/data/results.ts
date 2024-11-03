@@ -5912,6 +5912,22 @@ export const results: Record<string, Result> = {
       { teamId: "aston_martin", points: 0 },
     ],
   },
+  brazil: {
+    drivers: [],
+    constructors: [],
+  },
+  lasVegas: {
+    drivers: [],
+    constructors: [],
+  },
+  qatar: {
+    drivers: [],
+    constructors: [],
+  },
+  abuDhabi: {
+    drivers: [],
+    constructors: [],
+  },
 }
 
 // Aggregate driver standings up to a specific race

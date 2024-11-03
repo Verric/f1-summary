@@ -78,7 +78,6 @@ function transformData(results: Record<string, Result>): TargetShape {
   return Object.values(teamDataMap)
 }
 const data2 = transformData(results)
-console.log("Data2", data2)
 export default function MyResponsiveLine() {
   return (
     <ResponsiveLine
