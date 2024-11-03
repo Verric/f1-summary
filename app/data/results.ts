@@ -2,9 +2,6 @@ import type { StaticImageData } from "next/image"
 import { teams } from "./teams"
 
 export interface Result {
-  race: number
-  location: string
-  date: string
   drivers: {
     pos: number | "NC" | "DQ"
     driverId: string
@@ -24,9 +21,6 @@ export interface Result {
 }
 export const results: Record<string, Result> = {
   bahrain: {
-    race: 1,
-    location: "Bahrain",
-    date: "2024-03-02",
     drivers: [
       {
         pos: 1,
@@ -263,9 +257,6 @@ export const results: Record<string, Result> = {
     ],
   },
   saudiArabia: {
-    race: 2,
-    location: "Saudi Arabia",
-    date: "2024-03-09",
     drivers: [
       {
         pos: 1,
@@ -502,9 +493,6 @@ export const results: Record<string, Result> = {
     ],
   },
   australia: {
-    race: 3,
-    location: "Australia",
-    date: "2024-03-24",
     drivers: [
       {
         pos: 1,
@@ -730,9 +718,6 @@ export const results: Record<string, Result> = {
     ],
   },
   japan: {
-    race: 4,
-    location: "Japan",
-    date: "2024-04-07",
     drivers: [
       {
         pos: 1,
@@ -969,9 +954,6 @@ export const results: Record<string, Result> = {
     ],
   },
   chinaSprint: {
-    race: 1.5,
-    location: "China - Sprint",
-    date: "2024-04-21",
     drivers: [
       {
         pos: 1,
@@ -1209,9 +1191,6 @@ export const results: Record<string, Result> = {
     ],
   },
   china: {
-    race: 5,
-    location: "China",
-    date: "2024-04-21",
     drivers: [
       {
         pos: 1,
@@ -1448,9 +1427,6 @@ export const results: Record<string, Result> = {
     ],
   },
   miamiSprint: {
-    race: 5.5,
-    location: "Miami - Sprint",
-    date: "2024-05-05",
     drivers: [
       {
         pos: 1,
@@ -1689,9 +1665,6 @@ export const results: Record<string, Result> = {
     ],
   },
   miami: {
-    race: 6,
-    location: "Miami",
-    date: "2024-05-05",
     drivers: [
       {
         pos: 1,
@@ -1928,9 +1901,6 @@ export const results: Record<string, Result> = {
     ],
   },
   imola: {
-    race: 7,
-    location: "Imola",
-    date: "2024-05-19",
     drivers: [
       {
         pos: 1,
@@ -2167,9 +2137,6 @@ export const results: Record<string, Result> = {
     ],
   },
   monaco: {
-    race: 8,
-    location: "Monaco",
-    date: "2024-05-26",
     drivers: [
       {
         pos: 1,
@@ -2406,9 +2373,6 @@ export const results: Record<string, Result> = {
     ],
   },
   canada: {
-    race: 9,
-    location: "Canada",
-    date: "2024-06-09",
     drivers: [
       {
         pos: 1,
@@ -2645,9 +2609,6 @@ export const results: Record<string, Result> = {
     ],
   },
   spain: {
-    race: 10,
-    location: "Spain",
-    date: "2024-06-23",
     drivers: [
       {
         pos: 1,
@@ -2884,9 +2845,6 @@ export const results: Record<string, Result> = {
     ],
   },
   austriaSprint: {
-    race: 10.5,
-    location: "Austria - Sprint",
-    date: "2024-06-30",
     drivers: [
       {
         pos: 1,
@@ -3123,9 +3081,6 @@ export const results: Record<string, Result> = {
     ],
   },
   austria: {
-    race: 11,
-    location: "Austria",
-    date: "2024-06-30",
     drivers: [
       {
         pos: 1,
@@ -3362,9 +3317,6 @@ export const results: Record<string, Result> = {
     ],
   },
   greatBritain: {
-    race: 12,
-    location: "Great Britain",
-    date: "2024-07-07",
     drivers: [
       {
         pos: 1,
@@ -3601,9 +3553,6 @@ export const results: Record<string, Result> = {
     ],
   },
   hungary: {
-    race: 13,
-    location: "Hungary",
-    date: "2024-07-21",
     drivers: [
       {
         pos: 1,
@@ -3840,9 +3789,6 @@ export const results: Record<string, Result> = {
     ],
   },
   belgium: {
-    race: 14,
-    location: "Belgium",
-    date: "2024-07-28",
     drivers: [
       {
         pos: 1,
@@ -4079,9 +4025,6 @@ export const results: Record<string, Result> = {
     ],
   },
   netherlands: {
-    race: 15,
-    location: "Netherlands",
-    date: "2024-08-25",
     drivers: [
       {
         pos: 1,
@@ -4318,9 +4261,6 @@ export const results: Record<string, Result> = {
     ],
   },
   italy: {
-    race: 16,
-    location: "Italy",
-    date: "2024-09-01",
     drivers: [
       {
         pos: 1,
@@ -4557,9 +4497,6 @@ export const results: Record<string, Result> = {
     ],
   },
   azerbaijan: {
-    race: 17,
-    location: "Azerbaijan",
-    date: "2024-09-15",
     drivers: [
       {
         pos: 1,
@@ -4796,9 +4733,6 @@ export const results: Record<string, Result> = {
     ],
   },
   singapore: {
-    race: 18,
-    location: "Singapore",
-    date: "2024-09-15",
     drivers: [
       {
         pos: 1,
@@ -5035,9 +4969,6 @@ export const results: Record<string, Result> = {
     ],
   },
   unitedStatesSprint: {
-    race: 18.5,
-    location: "United States",
-    date: "2024-09-15",
     drivers: [
       {
         pos: 1,
@@ -5274,9 +5205,6 @@ export const results: Record<string, Result> = {
     ],
   },
   unitedStates: {
-    race: 19,
-    location: "United States",
-    date: "2024-09-15",
     drivers: [
       {
         pos: 1,
@@ -5513,9 +5441,6 @@ export const results: Record<string, Result> = {
     ],
   },
   mexico: {
-    race: 20,
-    location: "Mexico",
-    date: "2024-09-15",
     drivers: [
       {
         pos: 1,
@@ -5751,10 +5676,7 @@ export const results: Record<string, Result> = {
       { teamId: "rb", points: 0 },
     ],
   },
-  brazilSpring: {
-    race: 21,
-    date: "foo",
-    location: "brazil",
+  brazilSprint: {
     drivers: [
       {
         pos: 1,

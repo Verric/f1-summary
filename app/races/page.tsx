@@ -21,8 +21,11 @@ import Azerbaijan from "../assets/circuit_icons/azerbaijan-outline.png"
 import Singapore from "../assets/circuit_icons/singapore-outline.png"
 import UnitedStates from "../assets/circuit_icons/united-states-outline.png"
 import Mexico from "../assets/circuit_icons/mexico-outline.png"
+import Brazil from "../assets/circuit_icons/brazil-outline.png"
+import LasVegas from "../assets/circuit_icons/las-vegas-outline.png"
+import Qatar from "../assets/circuit_icons/qatar-outline.png"
+import AbuDhabi from "../assets/circuit_icons/abu-dhab-outline.png"
 
-const style = "rounded shadow-md"
 export default function RaceSelectionPage() {
   return (
     <main className="grid md:grid-cols-4 md:grid-rows-6 gap-4 grid-cols-3 grid-rows-8 bg-slate-100">
@@ -46,10 +49,10 @@ export default function RaceSelectionPage() {
       <LinkCard image={Singapore} name="Singapore" />
       <LinkCard image={UnitedStates} name="United States" />
       <LinkCard image={Mexico} name="Mexico" />
-      <article className={style}>21</article>
-      <article className={style}>22</article>
-      <article className={style}>23</article>
-      <article className={style}>24</article>
+      <EmptyCard image={Brazil} name="Brazil" />
+      <EmptyCard image={LasVegas} name="Las Vegas" />
+      <EmptyCard image={Qatar} name="Qatar" />
+      <EmptyCard image={AbuDhabi} name="Abu Dhabi" />
     </main>
   )
 }
@@ -57,11 +60,20 @@ export default function RaceSelectionPage() {
 function LinkCard({ image, name }: { image: StaticImageData; name: string }) {
   return (
     <Link
-      className="flex flex-col justify-center items-center rounded shadow-md bg-white hover:bg-slate-100"
+      className="flex flex-col justify-center items-center rounded-lg shadow-md bg-white hover:bg-orange-400"
       href={`/races/${camelCase(name)}`}
     >
       <Image src={image} alt={`${kebabCase(name)} circuit`} className="w-32 h-auto" />
       <h2 className="text-2xl">{name}</h2>
     </Link>
+  )
+}
+
+function EmptyCard({ image, name }: { image: StaticImageData; name: string }) {
+  return (
+    <div className="flex flex-col justify-center items-center rounded-lg shadow-md bg-gray-400">
+      <Image src={image} alt={`${kebabCase(name)} circuit`} className="w-32 h-auto" />
+      <h2 className="text-2xl">{name}</h2>
+    </div>
   )
 }

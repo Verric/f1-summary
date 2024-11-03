@@ -1,6 +1,6 @@
-// import fs from "node:fs"
-// import path from "node:path"
-// import { fileURLToPath } from "node:url"
+import fs from "node:fs"
+import path from "node:path"
+import { fileURLToPath } from "node:url"
 import * as cheerio from "cheerio"
 import { groupBy, merge, orderBy, startCase } from "lodash-es"
 // Just hacking stuff together.
@@ -30,21 +30,21 @@ const raceUrls = [
   "1250/las-vegas",
   "1251/qatar",
   "1252/abu-dhabi",
-]
+] as const
 
 //const DATA_URLS = ["/starting-grid", "/race-result", "/fastest-laps"]
 
-// function getPath(fileName = "results") {
-//   const __filename = fileURLToPath(import.meta.url)
-//   const __dirname = path.dirname(__filename)
-//   const filePath = path.join(__dirname, `${fileName}.json`)
-//   return filePath
-// }
+function getPath(fileName = "results") {
+  const __filename = fileURLToPath(import.meta.url)
+  const __dirname = path.dirname(__filename)
+  const filePath = path.join(__dirname, `${fileName}.json`)
+  return filePath
+}
 
-// function writeData(data) {
-//   const filePath = getPath()
-//   fs.writeFileSync(filePath, data)
-// }
+function writeData(data: string) {
+  const filePath = getPath()
+  fs.writeFileSync(filePath, data)
+}
 
 const CONSTRUCTORS_MAP = {
   "McLaren Mercedes": "mclaren",
@@ -57,15 +57,15 @@ const CONSTRUCTORS_MAP = {
   "RB Honda RBPT": "rb",
   "Alpine Renault": "alpine",
   "Kick Sauber Ferrari": "sauber",
-}
+} as const
 
-function convertPos(position) {
+function convertPos(position: string) {
   const result = Number.parseFloat(position)
   // position maybe a number or something like NC,DQ
   return isNaN(result) ? position : result
 }
 
-async function extractStartingPos(baseUrl) {
+async function extractStartingPos(baseUrl: string) {
   const url = `${baseUrl}/starting-grid`
 
   const $ = await cheerio.fromURL(url)
@@ -86,7 +86,7 @@ async function extractStartingPos(baseUrl) {
   return results.data
 }
 
-async function extractRaceResults(baseUrl) {
+async function extractRaceResults(baseUrl: string) {
   console.log("BASE URL", baseUrl)
   const url = `${baseUrl}/race-result`
   const $ = await cheerio.fromURL(url)
@@ -99,7 +99,7 @@ async function extractRaceResults(baseUrl) {
           const pos = convertPos($(el).find("td:nth-child(1)").text())
           const driverNo = $(el).find("td:nth-child(2)").text()
           const driverId = startCase($(el).find("td:nth-child(3)").text())
-          const teamId = $(el).find("td:nth-child(4)").text()
+          const teamId = $(el).find("td:nth-child(4)").text() as keyof typeof CONSTRUCTORS_MAP
           const laps = Number($(el).find("td:nth-child(5)").text())
           const time = $(el).find("td:nth-child(6)").text()
           const points = Number($(el).find("td:nth-child(7)").text())
@@ -112,17 +112,17 @@ async function extractRaceResults(baseUrl) {
   const flattenedData = data.map(item => Object.values(item)[0])
   const temp = flattenedData.map(datum => ({ ...datum, teamId: CONSTRUCTORS_MAP[datum.teamId] }))
   const contructors = groupBy(temp, "teamId")
+  const construcorsPoints: { teamId: string; points: number }[] = []
   for (const [key, value] of Object.entries(contructors)) {
     const points = value.reduce((acc, val) => {
       return acc + val.points
     }, 0)
-    console.log(`{teamId: "${key}", points: ${points}},`)
+    construcorsPoints.push({ teamId: key, points })
   }
-  console.log("------------------------------------------------------")
-  return data
+  return { drivers: data, constructors: construcorsPoints }
 }
 
-async function fastestLaps(baseUrl) {
+async function fastestLaps(baseUrl: string) {
   const url = `${baseUrl}/fastest-laps`
   const $ = await cheerio.fromURL(url)
   $(".tablet\\:hidden").remove()
@@ -144,24 +144,34 @@ async function fastestLaps(baseUrl) {
 
 async function main() {
   const res = await Promise.all(
-    raceUrls.slice(17, 18).map(async uri => {
-      const url = `${F1_BASE_URL}/${uri}`
-      console.log("URL", url)
-      const races = await extractRaceResults(url)
-      const fast = await fastestLaps(url)
-      const starting = await extractStartingPos(url)
-      const merged = merge({}, ...races, ...fast, ...starting)
+    raceUrls.map(async uri => {
+      //raceUrls.slice(21, 22).map(async uri => { // test subsetsn
+      const raceUrl = `${F1_BASE_URL}/${uri}`
+      console.log("URL", raceUrl)
+      const { drivers, constructors } = await extractRaceResults(raceUrl)
+      const fast = await fastestLaps(raceUrl)
+      const starting = await extractStartingPos(raceUrl)
+      const merged = merge({}, ...drivers, ...fast, ...starting)
       const results = orderBy(
         Object.values(merged),
+        //@ts-expect-error foo
         [item => (typeof item.pos === "number" ? item.pos : Infinity)],
         ["asc"]
       )
-      return results
+      const race = uri.split("/")[1]
+      return { [race]: { drivers: results, constructors: constructors } }
     })
   )
+  const flattened = res.reduce((acc, obj) => {
+    Object.keys(obj).forEach(key => {
+      acc[key] = obj[key]
+    })
+    return acc
+  }, {})
 
-  console.log(JSON.stringify(res.flat(), null, 2))
-  //writeData(JSON.stringify(results, null, 2))
+  //console.log(JSON.stringify(res[0], null, 2))
+  writeData(JSON.stringify(flattened, null, 2))
+  console.log("DONE")
 }
 
 main()
