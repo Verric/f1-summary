@@ -19,6 +19,8 @@ import Netherlands from "../assets/circuit_icons/netherlands-outline.png"
 import Italy from "../assets/circuit_icons/monza-outline.png"
 import Azerbaijan from "../assets/circuit_icons/azerbaijan-outline.png"
 import Singapore from "../assets/circuit_icons/singapore-outline.png"
+import UnitedStates from "../assets/circuit_icons/united-states-outline.png"
+import Mexico from "../assets/circuit_icons/mexico-outline.png"
 
 const style = "rounded shadow-md"
 export default function RaceSelectionPage() {
@@ -42,8 +44,8 @@ export default function RaceSelectionPage() {
       <LinkCard image={Italy} name="Italy" />
       <LinkCard image={Azerbaijan} name="Azerbaijan" />
       <LinkCard image={Singapore} name="Singapore" />
-      <article className={style}>19</article>
-      <article className={style}>20</article>
+      <LinkCard image={UnitedStates} name="United States" />
+      <LinkCard image={Mexico} name="Mexico" />
       <article className={style}>21</article>
       <article className={style}>22</article>
       <article className={style}>23</article>

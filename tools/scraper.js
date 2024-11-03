@@ -46,6 +46,19 @@ const raceUrls = [
 //   fs.writeFileSync(filePath, data)
 // }
 
+const CONSTRUCTORS_MAP = {
+  "McLaren Mercedes": "mclaren",
+  "Red Bull Racing Honda RBPT": "red_bull",
+  Mercedes: "mercedes",
+  Ferrari: "ferrari",
+  "Aston Martin Aramco Mercedes": "aston_martin",
+  "Haas Ferrari": "haas",
+  "Williams Mercedes": "williams",
+  "RB Honda RBPT": "rb",
+  "Alpine Renault": "alpine",
+  "Kick Sauber Ferrari": "sauber",
+}
+
 function convertPos(position) {
   const result = Number.parseFloat(position)
   // position maybe a number or something like NC,DQ
@@ -97,12 +110,13 @@ async function extractRaceResults(baseUrl) {
   })
   const data = results.data
   const flattenedData = data.map(item => Object.values(item)[0])
-  const contructors = groupBy(flattenedData, "teamId")
+  const temp = flattenedData.map(datum => ({ ...datum, teamId: CONSTRUCTORS_MAP[datum.teamId] }))
+  const contructors = groupBy(temp, "teamId")
   for (const [key, value] of Object.entries(contructors)) {
     const points = value.reduce((acc, val) => {
       return acc + val.points
     }, 0)
-    console.log(`${key}: ${points}`)
+    console.log(`{teamId: "${key}", points: ${points}},`)
   }
   console.log("------------------------------------------------------")
   return data

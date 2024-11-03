@@ -35,6 +35,11 @@ import AzerbaijanTyreGuide from "../assets/tyre_guides/azerbaijan_tyre_guide.avi
 import AzerbaijanPitStop from "../assets/pit-stops/azerbaijan_pit_stop.jpg"
 import SingaporeTyreGuide from "../assets/tyre_guides/singapore_tyre_guide.avif"
 import SingaporePitStop from "../assets/pit-stops/singapore_pit_stop.jpg"
+import UnitedStatesTyreGuide from "../assets/tyre_guides/united_states_tyre_guide.avif"
+import UnitedStatesPitStop from "../assets/pit-stops/united_states_pit_stop.jpg"
+import MexicoTyreGuide from "../assets/tyre_guides/mexico_tyre_guide.avif"
+import MexicoPitStop from "../assets/pit-stops/mexico_pit_stop.jpg"
+import BrazilTyreGuide from "../assets/tyre_guides/brazil_tyre_guide.avif"
 
 export interface Circuit {
   name: string
@@ -209,5 +214,59 @@ export const circuits: Record<string, Circuit> = {
     raceDistance: 306.143,
     tyreGuide: SingaporeTyreGuide,
     pitStopGuide: SingaporePitStop,
+  },
+  unitedStates: {
+    name: "United States Grand Prix",
+    location: "united states",
+    laps: 56,
+    lapDistance: 5.513,
+    raceDistance: 308.405,
+    tyreGuide: UnitedStatesTyreGuide,
+    pitStopGuide: UnitedStatesPitStop,
+  },
+  mexico: {
+    name: "Mexico Grand Prix",
+    location: "mexico",
+    laps: 71,
+    lapDistance: 4.304,
+    raceDistance: 305.354,
+    tyreGuide: MexicoTyreGuide,
+    pitStopGuide: MexicoPitStop,
+  },
+  brazil: {
+    name: "Brazil Grand Prix",
+    location: "brazil",
+    laps: 71,
+    lapDistance: 4.309,
+    raceDistance: 305.879,
+    tyreGuide: BrazilTyreGuide,
+    pitStopGuide: MexicoPitStop,
+  },
+  lasVegas: {
+    name: "Las Vegas Grand Prix",
+    location: "las vegas",
+    laps: 50,
+    lapDistance: 6.201,
+    raceDistance: 309.958,
+    tyreGuide: BrazilTyreGuide,
+    pitStopGuide: MexicoPitStop,
+  },
+  qatar: {
+    name: "Qatar Grand Prix",
+    location: "qatar",
+    laps: 57,
+    lapDistance: 5.419,
+    raceDistance: 308.611,
+    tyreGuide: BrazilTyreGuide,
+    pitStopGuide: MexicoPitStop,
+  },
+  abuDhabi: {
+    name: "Abu Dhabi Grand Prix",
+    location: "abu dhabi",
+    laps: 58,
+    lapDistance: 5.281,
+    raceDistance: 306.183,
+    tyreGuide: BrazilTyreGuide,
+    pitStopGuide: MexicoPitStop,
   },
 }

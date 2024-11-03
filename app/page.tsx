@@ -11,7 +11,7 @@ export default function Home() {
         <input
           type="range"
           min={1}
-          max={21}
+          max={25}
           value={race}
           onChange={e => setRace(Number(e.target.value))}
           className="range range-primary"
@@ -37,7 +37,11 @@ export default function Home() {
           <span>Netherlands</span>
           <span>Italy</span>
           <span>Azerbaijan</span>
-          <span>Azerbaijan</span>
+          <span>Singapore</span>
+          <span>United States - Sprint</span>
+          <span>United States</span>
+          <span>Mexico</span>
+          <span>Brazil - Sprint</span>
         </div>
         <section className="grid grid-cols-2">
           <ConstructorLeaderboard race={race} />
